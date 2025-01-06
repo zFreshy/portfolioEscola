@@ -862,13 +862,13 @@ html {
   }
   
   @media screen and (max-width: 767px) {
-    .w-hidden-main, .w-hidden-medium {
+    /* .w-hidden-main, .w-hidden-medium {
       display: inherit !important;
     }
   
     .w-hidden-small {
       display: none !important;
-    }
+    } */
   
     .w-row, .w-container .w-row {
       margin-left: 0;
@@ -931,7 +931,7 @@ html {
   }
   
   @media screen and (max-width: 479px) {
-    .w-container {
+    /* .w-container {
       max-width: none;
     }
   
@@ -941,7 +941,7 @@ html {
   
     .w-hidden-tiny {
       display: none !important;
-    }
+    } */
   
     .w-col {
       width: 100%;
@@ -1832,7 +1832,7 @@ html {
   
   .w-nav {
     z-index: 1000;
-    background: #ddd;
+    background: #fff;
     position: relative;
   }
   
@@ -1874,79 +1874,15 @@ html {
     position: relative;
   }
   
-  [data-nav-menu-open] {
-    text-align: center;
-    background: #c8c8c8;
-    min-width: 200px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    overflow: visible;
-    display: block !important;
-  }
+
   
   .w--nav-link-open {
     display: block;
     position: relative;
   }
   
-  .w-nav-overlay {
-    width: 100%;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-  }
   
-  .w-nav-overlay [data-nav-menu-open] {
-    top: 0;
-  }
   
-  .w-nav[data-animation="over-left"] .w-nav-overlay {
-    width: auto;
-  }
-  
-  .w-nav[data-animation="over-left"] .w-nav-overlay, .w-nav[data-animation="over-left"] [data-nav-menu-open] {
-    z-index: 1;
-    top: 0;
-    right: auto;
-  }
-  
-  .w-nav[data-animation="over-right"] .w-nav-overlay {
-    width: auto;
-  }
-  
-  .w-nav[data-animation="over-right"] .w-nav-overlay, .w-nav[data-animation="over-right"] [data-nav-menu-open] {
-    z-index: 1;
-    top: 0;
-    left: auto;
-  }
-  
-  .w-nav-button {
-    float: right;
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    padding: 18px;
-    font-size: 24px;
-    display: none;
-    position: relative;
-  }
-  
-  .w-nav-button:focus {
-    outline: 0;
-  }
-  
-  .w-nav-button.w--open {
-    color: #fff;
-    background-color: #c8c8c8;
-  }
   
   .w-nav[data-collapse="all"] .w-nav-menu {
     display: none;

@@ -845,13 +845,13 @@ textarea.w-input,textarea.w-select {
 }
 
 @media screen and (max-width: 767px) {
-    .w-hidden-main,.w-hidden-medium {
+    /* .w-hidden-main,.w-hidden-medium {
         display:inherit!important
     }
 
     .w-hidden-small {
         display: none!important
-    }
+    } */
 
     .w-container .w-row,.w-row {
         margin-left: 0;
@@ -914,7 +914,7 @@ textarea.w-input,textarea.w-select {
 }
 
 @media screen and (max-width: 479px) {
-    .w-container {
+    /* .w-container {
         max-width:none
     }
 
@@ -924,7 +924,7 @@ textarea.w-input,textarea.w-select {
 
     .w-hidden-tiny {
         display: none!important
-    }
+    } */
 
     .w-col {
         width: 100%
@@ -1866,56 +1866,13 @@ textarea.w-input,textarea.w-select {
     float: right
 }
 
-[data-nav-menu-open] {
-    display: block!important;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #c8c8c8;
-    text-align: center;
-    overflow: visible;
-    min-width: 200px
-}
+
 
 .w--nav-link-open {
     display: block;
     position: relative
 }
 
-.w-nav-overlay {
-    position: absolute;
-    overflow: hidden;
-    display: none;
-    top: 100%;
-    left: 0;
-    right: 0;
-    width: 100%
-}
-
-.w-nav-overlay [data-nav-menu-open] {
-    top: 0
-}
-
-.w-nav[data-animation=over-left] .w-nav-overlay {
-    width: auto
-}
-
-.w-nav[data-animation=over-left] .w-nav-overlay,.w-nav[data-animation=over-left] [data-nav-menu-open] {
-    right: auto;
-    z-index: 1;
-    top: 0
-}
-
-.w-nav[data-animation=over-right] .w-nav-overlay {
-    width: auto
-}
-
-.w-nav[data-animation=over-right] .w-nav-overlay,.w-nav[data-animation=over-right] [data-nav-menu-open] {
-    left: auto;
-    z-index: 1;
-    top: 0
-}
 
 .w-nav-button {
     position: relative;

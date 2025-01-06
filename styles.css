@@ -798,22 +798,22 @@ textarea.w-input,textarea.w-select {
     width: 100%
 }
 
-.w-hidden-main {
+/* .w-hidden-main {
     display: none!important
-}
+} */
 
 @media screen and (max-width: 991px) {
     .w-container {
         max-width:728px
     }
 
-    .w-hidden-main {
+    /* .w-hidden-main {
         display: inherit!important
     }
 
     .w-hidden-medium {
         display: none!important
-    }
+    } */
 
     .w-col-medium-1 {
         width: 8.33333%
@@ -871,13 +871,13 @@ textarea.w-input,textarea.w-select {
 }
 
 @media screen and (max-width: 767px) {
-    .w-hidden-main,.w-hidden-medium {
+    /* .w-hidden-main,.w-hidden-medium {
         display:inherit!important
     }
 
     .w-hidden-small {
         display: none!important
-    }
+    } */
 
     .w-row,.w-container .w-row {
         margin-left: 0;
@@ -944,13 +944,13 @@ textarea.w-input,textarea.w-select {
         max-width:none
     }
 
-    .w-hidden-main,.w-hidden-medium,.w-hidden-small {
+    /* .w-hidden-main,.w-hidden-medium,.w-hidden-small {
         display: inherit!important
     }
 
     .w-hidden-tiny {
         display: none!important
-    }
+    } */
 
     .w-col {
         width: 100%
@@ -1841,7 +1841,6 @@ textarea.w-input,textarea.w-select {
 
 .w-nav {
     z-index: 1000;
-    background: #ddd;
     position: relative
 }
 
@@ -1886,8 +1885,7 @@ textarea.w-input,textarea.w-select {
 [data-nav-menu-open] {
     text-align: center;
     min-width: 200px;
-    background: #c8c8c8;
-    position: absolute;
+    background: #fff;
     top: 100%;
     left: 0;
     right: 0;
@@ -1900,42 +1898,8 @@ textarea.w-input,textarea.w-select {
     position: relative
 }
 
-.w-nav-overlay {
-    width: 100%;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    overflow: hidden
-}
-
-.w-nav-overlay [data-nav-menu-open] {
-    top: 0
-}
-
-.w-nav[data-animation=over-left] .w-nav-overlay {
-    width: auto
-}
-
-.w-nav[data-animation=over-left] .w-nav-overlay,.w-nav[data-animation=over-left] [data-nav-menu-open] {
-    z-index: 1;
-    top: 0;
-    right: auto
-}
-
-.w-nav[data-animation=over-right] .w-nav-overlay {
-    width: auto
-}
-
-.w-nav[data-animation=over-right] .w-nav-overlay,.w-nav[data-animation=over-right] [data-nav-menu-open] {
-    z-index: 1;
-    top: 0;
-    left: auto
-}
 
 .w-nav-button {
-    float: right;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     tap-highlight-color: transparent;
@@ -1954,7 +1918,7 @@ textarea.w-input,textarea.w-select {
 
 .w-nav-button.w--open {
     color: #fff;
-    background-color: #c8c8c8
+    background-color: #fff
 }
 
 .w-nav[data-collapse=all] .w-nav-menu {
@@ -2100,7 +2064,8 @@ textarea.w-input,textarea.w-select {
 
 body {
     color: #fcfcfc;
-    background-color: #020202;
+    /* background-color: #020202; */
+    background-color: #fff;
     font-family: Inter,sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -2169,7 +2134,7 @@ a:hover {
 
 .page-wrapper {
     font-size: 1rem;
-    line-height: 1.5rem
+    line-height: 1.5rem;
 }
 
 .section {
@@ -3969,6 +3934,7 @@ a:hover {
     }
 }
 
+
 @media screen and (max-width: 767px) {
     .grid-3col.gap-small {
         grid-template-rows:auto auto;
@@ -4682,6 +4648,8 @@ video {
     overflow: hidden;
 
 }
+
+
 
 .c-metros {
     max-width: 80%;
@@ -5554,6 +5522,89 @@ OUTRO CSS -------------------------------------------------------- */
     text-decoration: none;
 }
 
-.body {
-    background-color: #fff;
+
+#xPortfolio:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    #quartaUnidade .w-hidden-main,.w-hidden-medium, #quartaUnidade .content_wrapp {
+            background-color: #78b7cf;
+        }
+
+    .w-hidden-main,.w-hidden-medium {
+        display:inherit!important
+    }
+
+    .w-hidden-small {
+        display: none!important
+    }
+
+    .w-row,.w-container .w-row {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .w-col {
+        width: 100%;
+        left: auto;
+        right: auto
+    }
+
+    .w-col-small-1 {
+        width: 8.33333%
+    }
+
+    .w-col-small-2 {
+        width: 16.6667%
+    }
+
+    .w-col-small-3 {
+        width: 25%
+    }
+
+    .w-col-small-4 {
+        width: 33.3333%
+    }
+
+    .w-col-small-5 {
+        width: 41.6667%
+    }
+
+    .w-col-small-6 {
+        width: 50%
+    }
+
+    .w-col-small-7 {
+        width: 58.3333%
+    }
+
+    .w-col-small-8 {
+        width: 66.6667%
+    }
+
+    .w-col-small-9 {
+        width: 75%
+    }
+
+    .w-col-small-10 {
+        width: 83.3333%
+    }
+
+    .w-col-small-11 {
+        width: 91.6667%
+    }
+
+    .w-col-small-12 {
+        width: 100%
+    }
+}
+
+#gta, #forza, #valhalla, #mine, #dbd {
+    background-color: #000;
+    height: 100vh;
 }

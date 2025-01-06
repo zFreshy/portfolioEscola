@@ -158,122 +158,80 @@ window.addEventListener("DOMContentLoaded", (event) => {
         let clickClose = document.querySelectorAll(".click-close")
         
         
-        
-        
-        
-        document.addEventListener("mousemove", (event) => {
-            const layers = document.querySelectorAll(".parallax-wrapper > *");
-            const { clientX, clientY } = event;
-        
-            const centerX = window.innerWidth / 2;
-            const centerY = window.innerHeight / 2;
-        
-            layers.forEach((layer) => {
-                const zIndex = parseInt(window.getComputedStyle(layer).zIndex, 10);
-        
-                if (zIndex === 1 || zIndex === 9) return; // Ignora camadas estáticas
-        
-                const isText = layer.tagName === "H1" || layer.tagName === "H2";
-        
-                // Velocidade: inversamente proporcional ao z-index (camadas inferiores se movem mais rápido)
-                const speed = isText ? 0.02 : 1 / (zIndex / 0.9);
-                const direction = isText ? -1 : 1; // Movimento inverso para textos
-        
-                const xOffset = direction * (clientX - centerX) * speed;
-                const yOffset = direction * (clientY - centerY) * speed;
-        
-                layer.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
-            });
-        }); 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
- 
-    
-    
-    
-    gsap.from('[animate] .word', {
+        // Parallax com ajustes para garantir o scroll
+    document.addEventListener("mousemove", (event) => {
+        const layers = document.querySelectorAll(".parallax-wrapper > *");
+        const { clientX, clientY } = event;
+  
+        const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
+  
+        layers.forEach((layer) => {
+          const zIndex = parseInt(window.getComputedStyle(layer).zIndex, 10);
+  
+          if (zIndex === 1 || zIndex === 9) return;
+  
+          const isText = layer.tagName === "H1" || layer.tagName === "H2";
+          const speed = isText ? 0.02 : 1 / (zIndex / 0.9);
+          const direction = isText ? -1 : 1;
+  
+          const xOffset = direction * (clientX - centerX) * speed;
+          const yOffset = direction * (clientY - centerY) * speed;
+  
+          layer.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
+        });
+      });
+  
+      // GSAP Scroll Trigger - mantém funcionalidade de animações
+      gsap.from('[animate] .word', {
         opacity: 0.3,
         duration: 0.25,
         ease: 'power1.in',
         stagger: 0.15,
-    
         scrollTrigger: {
-            trigger: '[animate]',
-            start: 'top center',
-            end: 'bottom center',
-            scrub: true
+          trigger: '[animate]',
+          start: 'top center',
+          end: 'bottom center',
+          scrub: true
         }
-    })
-    
-    
-    
-    
-    
-    
-    window.addEventListener("DOMContentLoaded", (event) => {
-            
-    
-        // Link timelines to scroll position
-        function createScrollTrigger(triggerElement, timeline) {
-            // Reset tl when scroll out of view past bottom of screen
-            ScrollTrigger.create({
-                trigger: triggerElement,
-                start: "top bottom"
-            });
-            // Play tl when scrolled into view (60% from top of screen)
-            ScrollTrigger.create({
-                trigger: triggerElement,
-                start: "top 80%",
-                onEnter: () => timeline.play()
-            });
-        }
-    
-        
-    
-        // Avoid flash of unstyled content
-        gsap.set("[text-split]", {
-            opacity: 1
+      });
+  
+      // Lenis Smooth Scroll com fallback
+      if (typeof Lenis !== "undefined") {
+        const lenis = new Lenis({
+          lerp: 0.1,
+          wheelMultiplier: 0.7,
+          gestureOrientation: "vertical",
+          normalizeWheel: false,
+          smoothTouch: false
         });
-    }
-    );
-    
-    // LENIS SMOOTH SCROLL
-    if (Webflow.env("editor") === undefined) {
-        lenis = new Lenis({
-            lerp: 0.1,
-            wheelMultiplier: 0.7,
-            gestureOrientation: "vertical",
-            normalizeWheel: false,
-            smoothTouch: false
-        });
+  
         function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
+          lenis.raf(time);
+          requestAnimationFrame(raf);
         }
         requestAnimationFrame(raf);
-    }
-    $("[data-lenis-start]").on("click", function() {
-        lenis.start();
-    });
-    $("[data-lenis-stop]").on("click", function() {
-        lenis.stop();
-    });
-    $("[data-lenis-toggle]").on("click", function() {
-        $(this).toggleClass("stop-scroll");
-        if ($(this).hasClass("stop-scroll")) {
-            lenis.stop();
-        } else {
-            lenis.start();
-        }
-    });
+  
+        // Controle de Lenis
+        document.querySelectorAll("[data-lenis-start]").forEach(el => {
+          el.addEventListener("click", () => lenis.start());
+        });
+        document.querySelectorAll("[data-lenis-stop]").forEach(el => {
+          el.addEventListener("click", () => lenis.stop());
+        });
+        document.querySelectorAll("[data-lenis-toggle]").forEach(el => {
+          el.addEventListener("click", function () {
+            this.classList.toggle("stop-scroll");
+            this.classList.contains("stop-scroll") ? lenis.stop() : lenis.start();
+          });
+        });
+      }
+  
+      // Garante o scroll normal caso Lenis falhe
+      window.addEventListener("DOMContentLoaded", () => {
+        document.documentElement.style.overflow = "auto";
+        document.body.style.overflow = "auto";
+      });
     
     
     
@@ -857,7 +815,93 @@ window.addEventListener("DOMContentLoaded", (event) => {
               
               abrirAtividade4(opCN4, opCN4Btn)
               fecharAtividade4(opCN4)
-            
+
+
+
+
+              let botaoPrimeiraUnidade2 = document.querySelectorAll(".botaoPrimeiraUnidade2")
+              let botaoSegundaUnidade2 = document.querySelectorAll(".botaoSegundaUnidade2")
+              let botaoTerceiraUnidade2 = document.querySelectorAll(".botaoTerceiraUnidade2")
+              let botaoQuartaUnidade2 = document.querySelectorAll(".botaoQuartaUnidade2")
+
+              
+            //   function abrirUnidade2(botao, paginaFechar) {
+                
+
+            //     botao.forEach(botao => 
+            //         botao.addEventListener('click', () => {
+            //             if (paginaFechar.style.display != "none") {
+            //                 function fadeOut1(element, duration) {
+            //                     let opacity = 1;
+            //                     const interval = 50; // Intervalo de tempo para a animação (em ms)
+            //                     const step = interval / duration; // Quanto diminuir a opacidade a cada intervalo
+                        
+            //                     const fadeEffect = setInterval(() => {
+            //                         opacity -= step;
+            //                         if (opacity <= 0) {
+            //                         opacity = 0;
+            //                         element.style.opacity = opacity;
+            //                         element.style.display = 'none'; // Esconde o elemento
+            //                         clearInterval(fadeEffect); // Para a animação
+            //                         if (botao == botaoPrimeiraUnidade2) {
+            //                             fadeIn(primeiraUnidade, 500)
+            //                         } else if (botao == botaoSegundaUnidade2) {
+            //                             fadeIn(segundaUnidade, 500)
+            //                         } else if (botao == botaoTerceiraUnidade2) {
+            //                             fadeIn(terceiraUnidade, 500)
+            //                         } else if (botao == botaoQuartaUnidade2) {
+            //                             fadeIn(quartaUnidade, 500)
+            //                         } 
+            //                         } else {
+            //                         element.style.opacity = opacity;
+            //                         }
+            //                     }, interval);
+            //                 }
+            //                 fadeOut1(paginaFechar, 500)
+            //             }
+            //         })
+            //       );
+
+
+            //   }
+
+              function abrirUnidade2(botao, paginaAbrir, paginaFechar) {
+                
+
+                botao.forEach(botao => 
+                    botao.addEventListener('click', () => {
+                        if (paginaFechar.style.display != "none") {
+                            function fadeOut1(element, duration) {
+                                let opacity = 1;
+                                const interval = 50; // Intervalo de tempo para a animação (em ms)
+                                const step = interval / duration; // Quanto diminuir a opacidade a cada intervalo
+                        
+                                const fadeEffect = setInterval(() => {
+                                    opacity -= step;
+                                    if (opacity <= 0) {
+                                    opacity = 0;
+                                    element.style.opacity = opacity;
+                                    element.style.display = 'none'; // Esconde o elemento
+                                    clearInterval(fadeEffect); // Para a animação
+                                    fadeIn(paginaAbrir, 500)
+                                    } else {
+                                    element.style.opacity = opacity;
+                                    }
+                                }, interval);
+                            }
+                            fadeOut1(paginaFechar, 500)
+                        }
+                    })
+                  );
+
+
+              }
+
+
+
+
+            abrirUnidade2(botaoSegundaUnidade2, segundaUnidade, primeiraUnidade)
+
             
             //   obDs1Btn.addEventListener("click", ()=> {
             //     function fadeOut1(element, duration) {

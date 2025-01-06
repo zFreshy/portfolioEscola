@@ -834,13 +834,7 @@ textarea.w-input,textarea.w-select {
 }
 
 @media screen and (max-width: 767px) {
-    .w-hidden-main,.w-hidden-medium {
-        display:inherit!important
-    }
-
-    .w-hidden-small {
-        display: none!important
-    }
+  
 
     .w-container .w-row,.w-row {
         margin-left: 0;
@@ -1814,7 +1808,7 @@ textarea.w-input,textarea.w-select {
 
 .w-nav {
     position: relative;
-    background: #ddd;
+
     z-index: 1000
 }
 
@@ -1861,7 +1855,6 @@ textarea.w-input,textarea.w-select {
 
 [data-nav-menu-open] {
     display: block!important;
-    position: absolute;
     top: 100%;
     left: 0;
     right: 0;
@@ -1877,7 +1870,6 @@ textarea.w-input,textarea.w-select {
 }
 
 .w-nav-overlay {
-    position: absolute;
     overflow: hidden;
     display: none;
     top: 100%;

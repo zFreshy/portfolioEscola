@@ -26,28 +26,29 @@
         </script>
 
 <!-- https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/ -->
+<!-- https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/ -->
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/teste/portfolio/17.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/teste/portfolio/16.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/teste/portfolio/12.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/teste/portfolio/14.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/teste/portfolio/15.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/teste/portfolio/11.css">
-        <link href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/teste/portfolio/index.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/17.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/16.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/12.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/14.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/15.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/11.css">
+        <link href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/index.css" rel="stylesheet" type="text/css"/>
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/netflix.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/netflix.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/news.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/news.css">
         
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/styles2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/styles2.css">
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/settings.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/settings.css">
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/styles.css">
 
 
 
@@ -2872,11 +2873,37 @@
                                 <div class="w-layout-grid grid_player">
                                     <div id="w-node-_63a215b9-decf-fa3a-23fa-ae312bd458d4-710aa1a0" class="video_wrapper">
                                         <div class="video_content-wrapper">
-                                            <div class="text-size-large">Meus Trabalhos e Atividades</div>
+                                            <div id="tituloTrabalhos" class="text-size-large">Meus Trabalhos e Atividades</div>
                                             <div class="padding-tiny"></div>
-                                            <p class="text-size-small text-color-black50">
-                                                Veja todos os meus projetos e atividades ao longo do ano por meio deste portfólio conceitu... <a class="text-color-yellow500">Ler mais</a>
-                                            </p>
+                                            <div class="text-container">
+                                                <p class="text-size-small text-color-black11">
+                                                    Veja todos os meus projetos e atividades ao longo do ano por meio deste portfólio conceitual .
+                                                    <span class="more-text">Aqui é o lugar onde coloco as atividades e seus detalhamentos, explicando o processo de como foram feitas, o que aprendi com elas e imagens do processo criativo das atividades no geral, o portfolio é dividido por unidades, área do conhecimento, e tipo de atividade, sendo elas obrigatórias ou opcionais.</span>
+                                                    <a id="btnLerMais" class="text-color-yellow500">Ler mais</a>
+                                                </p>
+                                            </div>
+                             
+                                            <script>
+                                                document.addEventListener("DOMContentLoaded", () => {
+                                                const toggleBtn = document.getElementById("btnLerMais");
+                                                const textContainer = document.querySelector(".text-container");
+                                                const sectionTitle = document.getElementById("tituloTrabalhos");
+                                                const moreText = document.querySelector(".more-text");
+
+                                                toggleBtn.addEventListener("click", () => {
+                                                    textContainer.classList.toggle("expanded");
+
+                                                    if (textContainer.classList.contains("expanded")) {
+                                                    toggleBtn.textContent = "Ler menos";
+                                                    sectionTitle.style.display = "none";
+                                                    } else {
+                                                    toggleBtn.textContent = "Ler mais";
+                                                    sectionTitle.style.display = "block";
+                                                    }
+                                                });
+                                                });
+
+                                            </script>
                                             <div class="w-layout-grid grid_video">
                                                 <a id="abrirPortfolio1" id="w-node-_0df5851e-dc1e-33e4-e0c3-678a799129c6-710aa1a0"  class="button_os w-inline-block">
                                                     <div class="icon_24x24 w-embed">
@@ -2884,23 +2911,23 @@
                                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9823 2.00119C11.2035 2.01667 9.58242 2.07325 8.29316 2.16486C7.83218 2.19761 7.7456 2.20827 7.55872 2.25533C6.9736 2.40265 6.47354 2.7624 6.14605 3.2716C5.98104 3.52817 5.86367 3.83373 5.81262 4.13962C5.78837 4.28496 5.78128 4.40878 5.75496 5.14663C5.74257 5.49368 5.73065 5.78973 5.72845 5.80452L5.72446 5.8314L5.60077 5.83737C5.21644 5.85594 4.39841 5.91101 4.22984 5.92967C3.85532 5.97114 3.49774 6.10087 3.18241 6.30972C2.61414 6.68607 2.23832 7.29304 2.15245 7.97316C2.13107 8.14256 2.06709 9.73902 2.03971 10.7867C1.98022 13.0628 1.98762 15.394 2.0616 17.6845C2.09739 18.7925 2.13809 19.6619 2.1617 19.8226C2.20326 20.1057 2.30766 20.4063 2.44565 20.6403C2.56495 20.8427 2.66675 20.9728 2.83816 21.1424C3.19848 21.4987 3.64077 21.7184 4.15137 21.7946C4.37364 21.8278 5.50576 21.8973 6.39839 21.9326C7.6477 21.9819 8.66223 22 10.1792 22C11.6962 22 12.7011 21.9821 13.9601 21.9327C14.8592 21.8974 15.9793 21.8285 16.2097 21.7942C16.9847 21.6789 17.6381 21.2069 17.9799 20.5154C18.1135 20.2452 18.1858 19.9942 18.2143 19.7018C18.223 19.6125 18.2475 19.0866 18.2665 18.5792C18.2714 18.4508 18.2776 18.3066 18.2805 18.2587L18.2856 18.1716L18.4826 18.1613C19.1115 18.1282 19.7556 18.0801 19.9003 18.0556C20.2471 17.9966 20.5347 17.8828 20.8264 17.6887C21.3135 17.3648 21.6566 16.8791 21.8032 16.3058C21.8501 16.1221 21.8607 16.0199 21.8822 15.5452C21.9302 14.4805 21.961 13.535 21.9888 12.2778C22.0038 11.5976 22.0037 8.66992 21.9887 7.99045C21.9526 6.35677 21.885 4.50963 21.8515 4.24334C21.796 3.80208 21.6163 3.38346 21.3319 3.03321C21.2599 2.94457 21.0769 2.76395 20.9872 2.69305C20.7717 2.52262 20.5125 2.38304 20.2571 2.29984C20.0603 2.23571 19.8878 2.20512 19.5922 2.18199C18.5226 2.09828 17.1386 2.03998 15.5898 2.01338C15.0742 2.00453 13.464 1.997 12.9823 2.00119ZM12.2956 3.83777C10.7513 3.86061 9.17101 3.92543 8.19382 4.00601C8.01464 4.02078 7.93989 4.03998 7.85757 4.09235C7.72561 4.17629 7.6363 4.32078 7.62266 4.47241C7.61852 4.51843 7.56874 5.75823 7.5709 5.76175C7.57136 5.76252 7.70448 5.75979 7.86669 5.75567C9.25612 5.7204 11.3485 5.72418 12.8649 5.76468C13.884 5.7919 14.7895 5.8326 15.568 5.88618C16.1512 5.92632 16.2527 5.93813 16.4546 5.98937C16.988 6.12476 17.4401 6.42826 17.7698 6.87233C18.023 7.21333 18.1872 7.65102 18.2184 8.06824C18.2368 8.31471 18.296 9.86438 18.3187 10.696C18.3671 12.4652 18.3759 14.7237 18.34 16.1148L18.3342 16.3387L18.4417 16.3327C19.0318 16.3001 19.5484 16.2617 19.6292 16.2446C19.8154 16.205 19.9675 16.0577 20.0136 15.8725C20.0273 15.8174 20.0339 15.729 20.0481 15.4069C20.2095 11.7551 20.2095 8.50259 20.0482 4.8657C20.0341 4.54875 20.0275 4.45936 20.0139 4.40522C19.9688 4.22468 19.8358 4.08177 19.6669 4.03244C19.6175 4.01802 19.4654 4.00425 19.0403 3.9757C17.969 3.90376 16.7579 3.85925 15.2682 3.83705C14.628 3.82752 12.9618 3.82791 12.2956 3.83777ZM8.47134 7.57191C7.53031 7.58776 6.48701 7.62196 5.7161 7.66224C5.11429 7.69369 4.46038 7.74 4.37551 7.7572C4.27761 7.77703 4.20844 7.81556 4.12896 7.89452C4.0535 7.96949 4.00654 8.05001 3.98732 8.1374C3.96254 8.25007 3.8866 10.3558 3.85904 11.6943C3.83851 12.6916 3.83851 15.0425 3.85904 16.0434C3.8889 17.4991 3.96282 19.5008 3.99066 19.6078C4.03438 19.7757 4.17711 19.9225 4.34283 19.97C4.38613 19.9825 4.64742 20.0093 4.72743 20.0096L4.76002 20.0097V19.7558C4.76002 19.3464 4.7977 19.0767 4.90025 18.752C5.21449 17.7572 6.03195 16.939 7.20941 16.4407C8.22941 16.0091 9.53957 15.8233 10.8702 15.9214C12.81 16.0644 14.3289 16.8054 15.0955 17.9827C15.3266 18.3377 15.4871 18.7406 15.5552 19.1367C15.5867 19.32 15.5979 19.4589 15.6041 19.7396L15.6099 20.0097L15.6368 20.0095C15.6964 20.0091 15.9619 19.9844 16.0009 19.9756C16.0828 19.9572 16.155 19.9148 16.2296 19.8414C16.3281 19.7445 16.3733 19.6507 16.3847 19.5195C16.4018 19.3233 16.4621 17.709 16.4848 16.8374C16.5344 14.9402 16.5344 12.7877 16.4848 10.8905C16.4623 10.0296 16.4018 8.41338 16.3847 8.21706C16.3717 8.06742 16.3 7.93766 16.1794 7.84513C16.077 7.76664 16.0154 7.75196 15.6854 7.72736C14.6382 7.64929 13.3456 7.59709 11.8176 7.57116C11.2516 7.56155 9.05698 7.56204 8.47134 7.57191ZM10.0749 8.92474C9.79541 8.94559 9.61652 8.97236 9.40695 9.02469C8.33109 9.29331 7.45487 10.0691 7.05393 11.1079C6.80658 11.7488 6.76493 12.4811 6.93762 13.1531C7.09023 13.747 7.38911 14.2665 7.83195 14.7075C8.11025 14.9846 8.39505 15.1886 8.73643 15.3552C9.3215 15.6407 9.95894 15.7519 10.6161 15.6831C11.5521 15.585 12.4258 15.0835 12.9888 14.3212C13.2482 13.9698 13.4572 13.525 13.5563 13.1133C13.6212 12.8434 13.6467 12.6175 13.6467 12.3124C13.6467 12.0716 13.6371 11.9462 13.6031 11.744C13.4656 10.926 13.0092 10.1604 12.3565 9.65242C11.8427 9.25262 11.2447 9.00927 10.6095 8.94148C10.4928 8.92903 10.158 8.91855 10.0749 8.92474ZM10.088 10.758C9.6021 10.8069 9.1572 11.0829 8.90572 11.4915C8.78688 11.6846 8.71398 11.8892 8.68467 12.1118C8.61539 12.6382 8.82198 13.1658 9.231 13.5072C9.43343 13.6762 9.68416 13.7952 9.94891 13.8479C10.0353 13.8652 10.0754 13.8679 10.2444 13.868C10.4148 13.8682 10.4528 13.8656 10.5393 13.8482C11.1997 13.7154 11.6986 13.1953 11.7956 12.5386C11.8134 12.4179 11.8135 12.2075 11.7957 12.0861C11.7204 11.5714 11.3851 11.1207 10.9137 10.9007C10.6926 10.7976 10.4806 10.7513 10.2401 10.7537C10.1732 10.7544 10.1047 10.7563 10.088 10.758ZM9.73596 17.7374C8.26216 17.8238 7.11806 18.3466 6.73379 19.1091C6.68134 19.2132 6.64593 19.3142 6.61963 19.4349C6.60303 19.511 6.60025 19.5565 6.59638 19.8161L6.592 20.1108L6.75594 20.1166C8.92991 20.1934 11.4284 20.1934 13.6024 20.1166L13.7662 20.1109L13.7621 19.8075C13.7586 19.5403 13.7559 19.4946 13.74 19.4246C13.6999 19.249 13.636 19.1018 13.5344 18.9509C13.0744 18.2675 11.9833 17.815 10.6063 17.7366C10.4277 17.7264 9.91511 17.7269 9.73596 17.7374Z" fill="currentColor"/>
                                                         </svg>
                                                     </div>
-                                                    <div class="button_txt">Watch</div>
+                                                    <div class="button_txt">Ver Portfolio</div>
                                                 </a>
-                                                <a id="w-node-_8a202c38-4f6e-6934-5030-49e88dbb2002-710aa1a0"  class="button_os ghost w-inline-block">
+                                                <!-- <a id="w-node-_8a202c38-4f6e-6934-5030-49e88dbb2002-710aa1a0"  class="button_os ghost w-inline-block">
                                                     <div class="icon_24x24 w-embed">
                                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8789 2.00348C11.6872 2.03384 11.5318 2.11058 11.394 2.24288C11.232 2.39841 11.1431 2.57756 11.1212 2.79267C11.1153 2.85094 11.1125 4.61598 11.1125 8.32508C11.1125 11.3209 11.1102 13.7719 11.1074 13.7719C11.0985 13.7719 10.8886 13.6133 10.7402 13.4945C10.1086 12.9885 9.50134 12.3733 8.98435 11.7153C8.6149 11.2451 8.29413 10.762 7.98611 10.2119C7.92629 10.1051 7.86094 9.99443 7.84089 9.96608C7.64695 9.69184 7.2818 9.5504 6.94983 9.62093C6.72958 9.66772 6.51254 9.81386 6.3932 9.99572C6.2821 10.165 6.22517 10.3942 6.24624 10.5874C6.26357 10.7462 6.29107 10.8164 6.4418 11.0865C7.35027 12.7143 8.56757 14.112 9.99857 15.1704C10.2826 15.3805 10.7174 15.6711 10.9434 15.8019C11.5308 16.142 12.2837 16.172 12.9066 15.8802C13.01 15.8318 13.0855 15.7879 13.2986 15.6527C14.0744 15.16 14.7589 14.6066 15.426 13.9328C16.2652 13.0851 16.958 12.1605 17.5585 11.0872C17.709 10.8181 17.7371 10.7465 17.7544 10.5874C17.7755 10.3942 17.7186 10.165 17.6075 9.99572C17.4881 9.81386 17.2711 9.66772 17.0509 9.62093C16.7694 9.56113 16.4539 9.65475 16.2525 9.85782C16.1748 9.93621 16.1398 9.9883 16.0146 10.2119C15.3546 11.3912 14.5305 12.4076 13.5446 13.2583C13.3383 13.4363 12.9127 13.7719 12.8933 13.7719C12.8905 13.7719 12.8882 11.3209 12.8882 8.32508C12.8882 4.61598 12.8854 2.85094 12.8795 2.79267C12.8576 2.57754 12.7686 2.39825 12.6067 2.24294C12.4908 2.13178 12.3624 2.05961 12.2139 2.02212C12.148 2.00547 11.9395 1.99388 11.8789 2.00348ZM2.79056 15.9761C2.61566 15.996 2.47484 16.0539 2.34125 16.161C2.15049 16.3139 2.03496 16.521 2.00848 16.7576C1.99723 16.8581 1.99715 18.271 2.00838 18.4764C2.05819 19.3873 2.41902 20.219 3.04677 20.8699C3.44118 21.2789 3.89611 21.5768 4.4262 21.7733C4.74069 21.8898 5.03074 21.9537 5.39197 21.986C5.60066 22.0047 18.4 22.0047 18.6087 21.986C19.0705 21.9447 19.4255 21.8516 19.8478 21.661C20.1428 21.5279 20.4667 21.317 20.7278 21.0882C20.841 20.9889 21.0265 20.801 21.1172 20.6935C21.5849 20.1399 21.8814 19.4624 21.971 18.7425C21.9981 18.5254 22.0021 18.353 21.9992 17.5347L21.9964 16.7238L21.9737 16.6394C21.9163 16.4262 21.7837 16.2424 21.5969 16.117C21.4318 16.0062 21.2547 15.9623 21.0369 15.9779C20.731 15.9999 20.4579 16.1899 20.3166 16.4789C20.2666 16.5811 20.2441 16.6667 20.2335 16.7956C20.2291 16.8491 20.2254 17.2375 20.2254 17.6588C20.2252 18.4727 20.2235 18.5158 20.1833 18.6954C20.1213 18.9723 20.0026 19.2284 19.8289 19.4602C19.7681 19.5413 19.5829 19.7305 19.4998 19.7963C19.3541 19.9118 19.146 20.0296 18.9751 20.0933C18.8699 20.1325 18.7242 20.1705 18.592 20.1932L18.4873 20.2112L12.1134 20.214C7.94944 20.2159 5.69019 20.214 5.59717 20.2085C5.30253 20.1911 5.07381 20.1295 4.81976 19.9993C4.28113 19.7231 3.91176 19.2175 3.79975 18.6031C3.78071 18.4987 3.78044 18.4877 3.77522 17.6191C3.7701 16.7669 3.76942 16.7385 3.75238 16.6647C3.72134 16.5305 3.67965 16.4424 3.591 16.3237C3.48882 16.187 3.33521 16.0723 3.18499 16.0205C3.07083 15.9812 2.90762 15.9628 2.79056 15.9761Z" fill="currentColor"/>
                                                         </svg>
                                                     </div>
                                                     <div class="button_txt">Download</div>
-                                                </a>
-                                                <div class="button_os ghost icon_only">
+                                                </a> -->
+                                                <!-- <div class="button_os ghost icon_only">
                                                     <div Title="More" class="icon_24x24 w-embed">
                                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M6 14C7.10457 14 8 13.1046 8 12C8 10.8954 7.10457 10 6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14ZM14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12ZM20 12C20 13.1046 19.1046 14 18 14C16.8954 14 16 13.1046 16 12C16 10.8954 16.8954 10 18 10C19.1046 10 20 10.8954 20 12Z" fill="currentColor"/>
                                                         </svg>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div data-poster-url="https://cdn.prod.website-files.com/64e45e949983886b710aa1a2/64e4b4305e9f52db544dd2c6_Former - 90408-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/64e45e949983886b710aa1a2/64e4b4305e9f52db544dd2c6_Former - 90408-transcode.mp4,https://cdn.prod.website-files.com/64e45e949983886b710aa1a2/64e4b4305e9f52db544dd2c6_Former - 90408-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom">
@@ -20232,9 +20259,9 @@ if (noticia) {
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66ab3aab7e94deb44fdb4298" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
-    <script src="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/teste/portfolio/17.js" defer></script>
+    <script src="teste/portfolio/17.js" defer></script>
 
-    <script src="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/teste/portfolio/index.js" type="text/javascript" defer></script>
+    <script src="teste/portfolio/index.js" type="text/javascript" defer></script>
     
     <script defer>
               ['wheel', 'touchmove', 'scroll'].forEach(event => {
@@ -20243,6 +20270,6 @@ if (noticia) {
         }, { passive: false });
       });
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/teste/portfolio/index2.js" defer></script>
+    <script src="teste/portfolio/index2.js" defer></script>
 
 </html>

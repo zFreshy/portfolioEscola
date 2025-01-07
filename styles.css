@@ -5608,3 +5608,25 @@ OUTRO CSS -------------------------------------------------------- */
     background-color: #000;
     height: 100vh;
 }
+
+.text-size-small.text-color-black11 {
+    color: #ababab;
+}
+
+.more-text {
+    display: none; /* Inicialmente escondido */
+  }
+
+  .text-container.expanded .more-text {
+    display: inline; /* Mostra o texto adicional */
+  }
+  
+  .text-container.expanded #toggle-btn::after {
+    content: "Ler menos"; /* Altera o texto do botão */
+  }
+  
+  .text-container.expanded + #section-title {
+    display: none; /* Esconde o título */
+  }
+
+  

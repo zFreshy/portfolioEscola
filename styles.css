@@ -5626,7 +5626,7 @@ OUTRO CSS -------------------------------------------------------- */
 
 #gta, #forza, #valhalla, #mine, #dbd {
     color: #000;
-    background-color: #ffffff;
+    background-color: transparent;
     height: 100vh;
 }
 
@@ -5673,4 +5673,11 @@ OUTRO CSS -------------------------------------------------------- */
     height: 86.7vh;
     overflow-y: scroll;
     background-color: #0e6cc4;
+}
+
+#jogoPolytrack {
+    display: none;
+    opacity: 0;
+    width: 100vw;
+    heigth: 100vh;
 }

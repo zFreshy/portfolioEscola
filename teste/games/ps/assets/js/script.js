@@ -187,9 +187,7 @@ function unlock_page() {
     if (tempoAcabou) {
         play_b()
         document.getElementById("restoDaPagina").style.display = "block";
-        document.getElementById("imagem").style.display = "none";
         botaoPsClicado = true;
-        document.getElementById("mensagem").style.display = "none"; // Oculta a mensagem quando o botão é clicado
     }
 }
     
@@ -280,7 +278,7 @@ document.addEventListener("keydown", function (event) {
             break;
         case "Enter":
         case "Space":
-            clickItem(current);
+            // clickItem(current);
             unlock_page();
             break;
         case "ShiftLeft":
@@ -312,8 +310,8 @@ let timer = setInterval(function () {
     // Timer para desbloquear botões
     setTimeout(function () {
       tempoAcabou = true;
-      document.getElementById("mensagem").style.display = "block";
-    }, 15000);
+      unlock_page();
+    }, 1000);
     
 //Notification
     function showNotification() {

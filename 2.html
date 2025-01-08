@@ -1050,12 +1050,12 @@ p {
                                         
                                         <div class="c-metros">
                                           <!-- <label for="minPriceInput">Preço Mínimo:</label> -->
-                                          <input id="minPriceInput" class="c-metros_input" type="number" value="100000" min="100000" max="500000">
+                                          <input id="minPriceInput" class="c-metros_input" type="number" value="0" min="0" max="500">
                                           
                                           <!-- <label for="maxPriceInput">Preço Máximo:</label> -->
-                                          <input id="maxPriceInput" class="c-metros_input" type="number" value="500000" min="100000" max="500000">
+                                          <input id="maxPriceInput" class="c-metros_input" type="number" value="500" min="0" max="500">
                                           
-                                          <div fs-rangeslider-max="500000" fs-rangeslider-element="wrapper" fs-rangeslider-min="100000" class="c-metros_wrapper">
+                                          <div fs-rangeslider-max="500" fs-rangeslider-element="wrapper" fs-rangeslider-min="0" class="c-metros_wrapper">
                                               <div fs-rangeslider-element="track" class="c-metros_track">
                                                   <div fs-rangeslider-element="handle" class="c-track_handle" id="handleMin" style="left: 0;"></div>
                                                   <div fs-rangeslider-element="handle" class="c-track_handle" id="handleMax" style="left: 100%;"></div>
@@ -1063,8 +1063,8 @@ p {
                                               </div>
                                           </div>
                                           <div class="c-metros_values">
-                                              <span id="minDisplay">100.000 €</span>
-                                              <span id="maxDisplay">500.000 €</span>
+                                              <span id="minDisplay">0 R$</span>
+                                              <span id="maxDisplay">500 R$</span>
                                           </div>
                                         </div>
                                         <div class="c-filtro">
@@ -1073,8 +1073,7 @@ p {
                                           </div>
                                           <select id="type-filter" class="c-sort_dropdown-item">
                                             <option value="">Todos</option>
-                                            <option value="casa">Casa</option>
-                                            <option value="apartamento">Apartamento</option>
+                                            <option value="jogo">jogo</option>
                                           </select>
                                         </div>
                                         <div class="c-filtro">
@@ -1315,27 +1314,27 @@ p {
                             <div id="results-container" class="results">
                               <div class="c-collection_wrapper w-dyn-list">
                                 <div fs-cmssort-element="list" fs-cmsfilter-element="list" role="list" class="c-collection_list w-dyn-items">
-                                  <div class="result-item" data-price="480000" data-type="casa" data-location="Barcelona">
+                                  <div class="result-item" data-price="146.98" data-type="jogo" data-location="jogo">
                                     <div role="listitem" class="c-collection_item w-dyn-item">
                                       <div class="c-card">
                                           <div class="c-card_image">
                                               <img src="https://cdn.prod.website-files.com/61de140e648fa4aa9ac62dde/61ea2255b736f9b9b545bd24_pexels-luis-yanez-206172.jpg" loading="lazy" alt="" class="c-card_img"/>
                                               <div class="c-card_type">
-                                                  <div fs-cmsfilter-field="tipo">Casa</div>
+                                                  <div fs-cmsfilter-field="tipo">Jogo</div>
                                               </div>
                                           </div>
                                           <div class="c-card_bottom">
                                               <div class="c-card_content">
                                                   <div class="c-card_top">
                                                       <div class="c-card_price">
-                                                          <div fs-cmsfilter-field="precio" class="c-title-3">480000</div>
-                                                          <div class="c-title-3 cc-euros">€</div>
+                                                          <div fs-cmsfilter-field="precio" class="c-title-3">146,98</div>
+                                                          <div class="c-title-3 cc-euros">R$</div>
                                                       </div>
                                                       <div class="c-card_place">
-                                                          <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
+                                                          <!-- <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/> -->
                                                           <div class="c-location_place w-embed">
                                                               <p class="c-text-2">
-                                                                  Casa em <span fs-cmsfilter-field="provincia">Barcelona</span>
+                                                                  Jogo <span fs-cmsfilter-field="provincia"></span>
                                                               </p>
                                                           </div>
                                                       </div>
@@ -1344,17 +1343,17 @@ p {
                                               <div class="c-card_details">
                                                   <div class="c-detail_wrapper">
                                                       <div class="c-detail">
-                                                          <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de1748666b248b1b1368c8_bed.png" loading="lazy" alt="" class="c-rooms_icon"/>
+                                                          <!-- <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de1748666b248b1b1368c8_bed.png" loading="lazy" alt="" class="c-rooms_icon"/> -->
                                                           <div class="c-detail_wrap">
                                                               <div fs-cmsfilter-field="habitaciones" class="c-text-2">4</div>
                                                           </div>
                                                       </div>
-                                                      <div class="c-detail">
+                                                      <!-- <div class="c-detail">
                                                           <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower.png" loading="lazy" alt="" sizes="20px" srcset="https://assets.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower-p-500.png 500w, https://assets.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower.png 512w" class="c-rooms_icon"/>
                                                           <div fs-cmsfilter-field="banos" class="c-text-2">3</div>
-                                                      </div>
+                                                      </div> -->
                                                   </div>
-                                                  <div class="c-detail">
+                                                  <!-- <div class="c-detail">
                                                       <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de17482808e00eda812029_selection.png" loading="lazy" alt="" class="c-rooms_icon"/>
                                                       <div class="w-embed">
                                                           <p class="c-text-2">
@@ -1362,7 +1361,7 @@ p {
                                                               m²
                                                           </p>
                                                       </div>
-                                                  </div>
+                                                  </div> -->
                                               </div>
                                               <div class="c-card_extras">
                                                   <div fs-cmsfilter-field="parking" class="w-embed">true</div>
@@ -1376,27 +1375,27 @@ p {
                                   </div>
                                   </div>
 
-                                  <div class="result-item" data-price="240000" data-type="apartamento" data-location="Madrid">
+                                  <div class="result-item" data-price="48.60" data-type="jogo" data-location="jogo">
                                     <div role="listitem" class="c-collection_item w-dyn-item">
                                       <div class="c-card">
                                           <div class="c-card_image">
                                               <img src="https://cdn.prod.website-files.com/61de140e648fa4aa9ac62dde/61ea203def259ed2239b0586_mika-baumeister-PshCtT16gJo-unsplash.jpg" loading="lazy" alt="" class="c-card_img"/>
                                               <div class="c-card_type">
-                                                  <div fs-cmsfilter-field="tipo">Apartamento</div>
+                                                  <div fs-cmsfilter-field="tipo">Jogo</div>
                                               </div>
                                           </div>
                                           <div class="c-card_bottom">
                                               <div class="c-card_content">
                                                   <div class="c-card_top">
                                                       <div class="c-card_price">
-                                                          <div fs-cmsfilter-field="precio" class="c-title-3">240000</div>
-                                                          <div class="c-title-3 cc-euros">€</div>
+                                                          <div fs-cmsfilter-field="precio" class="c-title-3">48,60</div>
+                                                          <div class="c-title-3 cc-euros">R$</div>
                                                       </div>
                                                       <div class="c-card_place">
-                                                          <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
+                                                          <!-- <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/> -->
                                                           <div class="c-location_place w-embed">
                                                               <p class="c-text-2">
-                                                                  Apartamento em <span fs-cmsfilter-field="provincia">Madrid</span>
+                                                                  Jogo <span fs-cmsfilter-field="provincia"></span>
                                                               </p>
                                                           </div>
                                                       </div>
@@ -1405,17 +1404,17 @@ p {
                                               <div class="c-card_details">
                                                   <div class="c-detail_wrapper">
                                                       <div class="c-detail">
-                                                          <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de1748666b248b1b1368c8_bed.png" loading="lazy" alt="" class="c-rooms_icon"/>
+                                                          <!-- <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de1748666b248b1b1368c8_bed.png" loading="lazy" alt="" class="c-rooms_icon"/> -->
                                                           <div class="c-detail_wrap">
                                                               <div fs-cmsfilter-field="habitaciones" class="c-text-2">2</div>
                                                           </div>
                                                       </div>
-                                                      <div class="c-detail">
+                                                      <!-- <div class="c-detail">
                                                           <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower.png" loading="lazy" alt="" sizes="20px" srcset="https://assets.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower-p-500.png 500w, https://assets.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower.png 512w" class="c-rooms_icon"/>
                                                           <div fs-cmsfilter-field="banos" class="c-text-2">2</div>
-                                                      </div>
+                                                      </div> -->
                                                   </div>
-                                                  <div class="c-detail">
+                                                  <!-- <div class="c-detail">
                                                       <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de17482808e00eda812029_selection.png" loading="lazy" alt="" class="c-rooms_icon"/>
                                                       <div class="w-embed">
                                                           <p class="c-text-2">
@@ -1423,7 +1422,7 @@ p {
                                                               m²
                                                           </p>
                                                       </div>
-                                                  </div>
+                                                  </div> -->
                                               </div>
                                               <div class="c-card_extras">
                                                   <div fs-cmsfilter-field="parking" class="w-embed">true</div>
@@ -1438,27 +1437,27 @@ p {
                                   </div>
 
 
-                                  <div class="result-item" data-price="360000" data-type="casa" data-location="Barcelona">
+                                  <div class="result-item" data-price="109.40" data-type="jogo" data-location="jogo">
                                     <div role="listitem" class="c-collection_item w-dyn-item">
                                       <div class="c-card">
                                           <div class="c-card_image">
                                               <img src="https://cdn.prod.website-files.com/61de140e648fa4aa9ac62dde/61ea226d9fd6544b7487b596_pexels-binyamin-mellish-106399.jpg" loading="lazy" alt="" class="c-card_img"/>
                                               <div class="c-card_type">
-                                                  <div fs-cmsfilter-field="tipo">Casa</div>
+                                                  <div fs-cmsfilter-field="tipo">Jogo</div>
                                               </div>
                                           </div>
                                           <div class="c-card_bottom">
                                               <div class="c-card_content">
                                                   <div class="c-card_top">
                                                       <div class="c-card_price">
-                                                          <div fs-cmsfilter-field="precio" class="c-title-3">360000</div>
-                                                          <div class="c-title-3 cc-euros">€</div>
+                                                          <div fs-cmsfilter-field="precio" class="c-title-3">109,40</div>
+                                                          <div class="c-title-3 cc-euros">R$</div>
                                                       </div>
                                                       <div class="c-card_place">
-                                                          <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
+                                                          <!-- <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/> -->
                                                           <div class="c-location_place w-embed">
                                                               <p class="c-text-2">
-                                                                  Casa em <span fs-cmsfilter-field="provincia">Barcelona</span>
+                                                                  Jogo <span fs-cmsfilter-field="provincia"></span>
                                                               </p>
                                                           </div>
                                                       </div>
@@ -1466,18 +1465,18 @@ p {
                                               </div>
                                               <div class="c-card_details">
                                                   <div class="c-detail_wrapper">
-                                                      <div class="c-detail">
-                                                          <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de1748666b248b1b1368c8_bed.png" loading="lazy" alt="" class="c-rooms_icon"/>
+                                                       <div class="c-detail">
+                                                          <!-- <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de1748666b248b1b1368c8_bed.png" loading="lazy" alt="" class="c-rooms_icon"/> -->
                                                           <div class="c-detail_wrap">
                                                               <div fs-cmsfilter-field="habitaciones" class="c-text-2">3</div>
                                                           </div>
                                                       </div>
-                                                      <div class="c-detail">
+                                                      <!--<div class="c-detail">
                                                           <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower.png" loading="lazy" alt="" sizes="20px" srcset="https://assets.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower-p-500.png 500w, https://assets.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower.png 512w" class="c-rooms_icon"/>
                                                           <div fs-cmsfilter-field="banos" class="c-text-2">2</div>
-                                                      </div>
+                                                      </div> -->
                                                   </div>
-                                                  <div class="c-detail">
+                                                  <!-- <div class="c-detail">
                                                       <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de17482808e00eda812029_selection.png" loading="lazy" alt="" class="c-rooms_icon"/>
                                                       <div class="w-embed">
                                                           <p class="c-text-2">
@@ -1485,7 +1484,7 @@ p {
                                                               m²
                                                           </p>
                                                       </div>
-                                                  </div>
+                                                  </div> -->
                                               </div>
                                               <div class="c-card_extras">
                                                   <div fs-cmsfilter-field="parking" class="w-embed">false</div>
@@ -1503,27 +1502,27 @@ p {
 
 
 
-                                    <div class="result-item" data-price="380400" data-type="apartamento" data-location="Malaga">
+                                    <div class="result-item" data-price="59.99" data-type="jogo" data-location="jogo">
                                       <div role="listitem" class="c-collection_item w-dyn-item">
                                         <div class="c-card">
                                             <div class="c-card_image">
                                                 <img src="https://cdn.prod.website-files.com/61de140e648fa4aa9ac62dde/61ea2053ef259e452d9b080f_margaret-polinder-6cELQlAcjbI-unsplash.jpg" loading="lazy" alt="" class="c-card_img"/>
                                                 <div class="c-card_type">
-                                                    <div fs-cmsfilter-field="tipo">Apartamento</div>
+                                                    <div fs-cmsfilter-field="tipo">Jogo</div>
                                                 </div>
                                             </div>
                                             <div class="c-card_bottom">
                                                 <div class="c-card_content">
                                                     <div class="c-card_top">
                                                         <div class="c-card_price">
-                                                            <div fs-cmsfilter-field="precio" class="c-title-3">380400</div>
-                                                            <div class="c-title-3 cc-euros">€</div>
+                                                            <div fs-cmsfilter-field="precio" class="c-title-3">59,99</div>
+                                                            <div class="c-title-3 cc-euros">R$</div>
                                                         </div>
                                                         <div class="c-card_place">
-                                                            <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
+                                                            <!-- <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/> -->
                                                             <div class="c-location_place w-embed">
                                                                 <p class="c-text-2">
-                                                                    Apartamento em <span fs-cmsfilter-field="provincia">Malaga</span>
+                                                                    Jogo <span fs-cmsfilter-field="provincia"></span>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1532,17 +1531,17 @@ p {
                                                 <div class="c-card_details">
                                                     <div class="c-detail_wrapper">
                                                         <div class="c-detail">
-                                                            <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de1748666b248b1b1368c8_bed.png" loading="lazy" alt="" class="c-rooms_icon"/>
+                                                            <!-- <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de1748666b248b1b1368c8_bed.png" loading="lazy" alt="" class="c-rooms_icon"/> -->
                                                             <div class="c-detail_wrap">
                                                                 <div fs-cmsfilter-field="habitaciones" class="c-text-2">4</div>
                                                             </div>
                                                         </div>
-                                                        <div class="c-detail">
+                                                        <!-- <div class="c-detail">
                                                             <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower.png" loading="lazy" alt="" sizes="20px" srcset="https://assets.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower-p-500.png 500w, https://assets.website-files.com/61de1007d5178522c617123f/61de17482808e0233c81202a_shower.png 512w" class="c-rooms_icon"/>
                                                             <div fs-cmsfilter-field="banos" class="c-text-2">3</div>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
-                                                    <div class="c-detail">
+                                                    <!-- <div class="c-detail">
                                                         <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61de17482808e00eda812029_selection.png" loading="lazy" alt="" class="c-rooms_icon"/>
                                                         <div class="w-embed">
                                                             <p class="c-text-2">
@@ -1550,7 +1549,7 @@ p {
                                                                 m²
                                                             </p>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                                 <div class="c-card_extras">
                                                     <div fs-cmsfilter-field="parking" class="w-embed">true</div>
@@ -1581,7 +1580,7 @@ p {
                                                     <div class="c-card_top">
                                                         <div class="c-card_price">
                                                             <div fs-cmsfilter-field="precio" class="c-title-3">255000</div>
-                                                            <div class="c-title-3 cc-euros">€</div>
+                                                            <div class="c-title-3 cc-euros">R$</div>
                                                         </div>
                                                         <div class="c-card_place">
                                                             <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
@@ -1639,7 +1638,7 @@ p {
                                                     <div class="c-card_top">
                                                         <div class="c-card_price">
                                                             <div fs-cmsfilter-field="precio" class="c-title-3">450000</div>
-                                                            <div class="c-title-3 cc-euros">€</div>
+                                                            <div class="c-title-3 cc-euros">R$</div>
                                                         </div>
                                                         <div class="c-card_place">
                                                             <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
@@ -1697,7 +1696,7 @@ p {
                                                     <div class="c-card_top">
                                                         <div class="c-card_price">
                                                             <div fs-cmsfilter-field="precio" class="c-title-3">180000</div>
-                                                            <div class="c-title-3 cc-euros">€</div>
+                                                            <div class="c-title-3 cc-euros">R$</div>
                                                         </div>
                                                         <div class="c-card_place">
                                                             <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
@@ -1755,7 +1754,7 @@ p {
                                                     <div class="c-card_top">
                                                         <div class="c-card_price">
                                                             <div fs-cmsfilter-field="precio" class="c-title-3">175500</div>
-                                                            <div class="c-title-3 cc-euros">€</div>
+                                                            <div class="c-title-3 cc-euros">R$</div>
                                                         </div>
                                                         <div class="c-card_place">
                                                             <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
@@ -1813,7 +1812,7 @@ p {
                                                     <div class="c-card_top">
                                                         <div class="c-card_price">
                                                             <div fs-cmsfilter-field="precio" class="c-title-3">390000</div>
-                                                            <div class="c-title-3 cc-euros">€</div>
+                                                            <div class="c-title-3 cc-euros">R$</div>
                                                         </div>
                                                         <div class="c-card_place">
                                                             <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
@@ -1871,7 +1870,7 @@ p {
                                                     <div class="c-card_top">
                                                         <div class="c-card_price">
                                                             <div fs-cmsfilter-field="precio" class="c-title-3">205000</div>
-                                                            <div class="c-title-3 cc-euros">€</div>
+                                                            <div class="c-title-3 cc-euros">R$</div>
                                                         </div>
                                                         <div class="c-card_place">
                                                             <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
@@ -1929,7 +1928,7 @@ p {
                                                     <div class="c-card_top">
                                                         <div class="c-card_price">
                                                             <div fs-cmsfilter-field="precio" class="c-title-3">165000</div>
-                                                            <div class="c-title-3 cc-euros">€</div>
+                                                            <div class="c-title-3 cc-euros">R$</div>
                                                         </div>
                                                         <div class="c-card_place">
                                                             <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
@@ -1987,7 +1986,7 @@ p {
                                                     <div class="c-card_top">
                                                         <div class="c-card_price">
                                                             <div fs-cmsfilter-field="precio" class="c-title-3">280000</div>
-                                                            <div class="c-title-3 cc-euros">€</div>
+                                                            <div class="c-title-3 cc-euros">R$</div>
                                                         </div>
                                                         <div class="c-card_place">
                                                             <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
@@ -2045,7 +2044,7 @@ p {
                                                     <div class="c-card_top">
                                                         <div class="c-card_price">
                                                             <div fs-cmsfilter-field="precio" class="c-title-3">240000</div>
-                                                            <div class="c-title-3 cc-euros">€</div>
+                                                            <div class="c-title-3 cc-euros">R$</div>
                                                         </div>
                                                         <div class="c-card_place">
                                                             <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
@@ -2103,7 +2102,7 @@ p {
                                                     <div class="c-card_top">
                                                         <div class="c-card_price">
                                                             <div fs-cmsfilter-field="precio" class="c-title-3">110000</div>
-                                                            <div class="c-title-3 cc-euros">€</div>
+                                                            <div class="c-title-3 cc-euros">R$</div>
                                                         </div>
                                                         <div class="c-card_place">
                                                             <img src="https://cdn.prod.website-files.com/61de1007d5178522c617123f/61e897e3ee111c04f7ffaef5_ubicacion.png" loading="lazy" alt="" class="c-location_icon"/>
@@ -2178,109 +2177,123 @@ p {
 
         <script>
           document.addEventListener('DOMContentLoaded', function () {
-              // Elementos do DOM
-              const searchBar = document.getElementById('search-bar');
-              const priceMin = document.getElementById('minPriceInput');
-              const priceMax = document.getElementById('maxPriceInput');
-              const typeFilter = document.getElementById('type-filter');
-              const locationFilter = document.getElementById('location-filter');
-              const items = document.querySelectorAll('.result-item');
-      
-              const track = document.querySelector('.c-metros_track');
-              const handleMin = document.getElementById('handleMin');
-              const handleMax = document.getElementById('handleMax');
-              const fill = document.getElementById('fill');
-              const minInput = document.getElementById('minPriceInput');
-              const maxInput = document.getElementById('maxPriceInput');
-              const minDisplay = document.getElementById('minDisplay');
-              const maxDisplay = document.getElementById('maxDisplay');
-      
-              let min = 100000;
-              let max = 500000;
-      
-              // Atualiza valores e posições dos controles deslizantes
-              const updateValues = () => {
-                  const range = max - min;
-                  const minPosition = ((minInput.value - min) / range) * 100;
-                  const maxPosition = ((maxInput.value - min) / range) * 100;
-      
-                  handleMin.style.left = `${minPosition}%`;
-                  handleMax.style.left = `${maxPosition}%`;
-                  fill.style.left = `${minPosition}%`;
-                  fill.style.width = `${maxPosition - minPosition}%`;
-      
-                  minDisplay.textContent = `${parseInt(minInput.value).toLocaleString()} €`;
-                  maxDisplay.textContent = `${parseInt(maxInput.value).toLocaleString()} €`;
-      
-                  filterResults();
-              };
-      
-              // Filtra os resultados com base nos critérios
-              const filterResults = () => {
-                  const searchQuery = searchBar.value.toLowerCase();
-                  const minPrice = parseInt(priceMin.value) || 0;
-                  const maxPrice = parseInt(priceMax.value) || Infinity;
-                  const selectedType = typeFilter.value;
-                  const locationQuery = locationFilter.value.toLowerCase();
-      
-                  items.forEach(item => {
-                      const price = parseInt(item.dataset.price);
-                      const type = item.dataset.type;
-                      const location = item.dataset.location.toLowerCase();
-      
-                      const matchesSearch = item.textContent.toLowerCase().includes(searchQuery);
-                      const matchesPrice = price >= minPrice && price <= maxPrice;
-                      const matchesType = !selectedType || type === selectedType;
-                      const matchesLocation = location.includes(locationQuery);
-      
-                      if (matchesSearch && matchesPrice && matchesType && matchesLocation) {
-                          item.style.display = 'block';
-                      } else {
-                          item.style.display = 'none';
-                      }
-                  });
-              };
-      
-              // Lida com o arrasto dos controles deslizantes
-              const handleDrag = (event, handle, isMin) => {
-                  const trackRect = track.getBoundingClientRect();
-                  const trackWidth = trackRect.width;
-                  let newPosition = ((event.clientX - trackRect.left) / trackWidth) * 100;
-      
-                  if (isMin) {
-                      newPosition = Math.max(0, Math.min(newPosition, parseFloat(handleMax.style.left)));
-                      minInput.value = Math.round(min + (newPosition / 100) * (max - min));
-                  } else {
-                      newPosition = Math.min(100, Math.max(newPosition, parseFloat(handleMin.style.left)));
-                      maxInput.value = Math.round(min + (newPosition / 100) * (max - min));
-                  }
-                  updateValues();
-              };
-      
-              const addDragListeners = (handle, isMin) => {
-                  const onMouseMove = (event) => handleDrag(event, handle, isMin);
-                  const onMouseUp = () => {
-                      document.removeEventListener('mousemove', onMouseMove);
-                      document.removeEventListener('mouseup', onMouseUp);
-                  };
-                  document.addEventListener('mousemove', onMouseMove);
-                  document.addEventListener('mouseup', onMouseUp);
-              };
-      
-              // Adiciona eventos de arrasto para os controles
-              handleMin.addEventListener('mousedown', () => addDragListeners(handleMin, true));
-              handleMax.addEventListener('mousedown', () => addDragListeners(handleMax, false));
-      
-              // Adiciona eventos para os filtros
-              searchBar.addEventListener('input', filterResults);
-              priceMin.addEventListener('input', updateValues);
-              priceMax.addEventListener('input', updateValues);
-              typeFilter.addEventListener('change', filterResults);
-              locationFilter.addEventListener('input', filterResults);
-      
-              // Inicializa os valores
-              updateValues();
-          });
+            const searchBar = document.getElementById('search-bar');
+            const priceMin = document.getElementById('minPriceInput');
+            const priceMax = document.getElementById('maxPriceInput');
+            const typeFilter = document.getElementById('type-filter');
+            const locationFilter = document.getElementById('location-filter');
+            const items = document.querySelectorAll('.result-item');
+
+            const track = document.querySelector('.c-metros_track');
+            const handleMin = document.getElementById('handleMin');
+            const handleMax = document.getElementById('handleMax');
+            const fill = document.getElementById('fill');
+            const minInput = document.getElementById('minPriceInput');
+            const maxInput = document.getElementById('maxPriceInput');
+            const minDisplay = document.getElementById('minDisplay');
+            const maxDisplay = document.getElementById('maxDisplay');
+
+            let min = 0;
+            let max = 500;
+
+            // Atualiza valores e posições dos controles deslizantes
+            const updateValues = () => {
+                const range = max - min;
+                const minPosition = ((minInput.value - min) / range) * 100;
+                const maxPosition = ((maxInput.value - min) / range) * 100;
+
+                handleMin.style.left = `${minPosition}%`;
+                handleMax.style.left = `${maxPosition}%`;
+                fill.style.left = `${minPosition}%`;
+                fill.style.width = `${maxPosition - minPosition}%`;
+
+                minDisplay.textContent = `${parseInt(minInput.value).toLocaleString()} R$`;
+                maxDisplay.textContent = `${parseInt(maxInput.value).toLocaleString()} R$`;
+
+                filterResults();
+            };
+
+            // Filtra os resultados com base nos critérios
+            const filterResults = () => {
+                const searchQuery = searchBar.value.toLowerCase();
+                const minPrice = parseInt(priceMin.value) || 0;
+                const maxPrice = parseInt(priceMax.value) || Infinity;
+                const selectedType = typeFilter.value;
+                const locationQuery = locationFilter.value.toLowerCase();
+
+                items.forEach(item => {
+                    const price = parseInt(item.dataset.price);
+                    const type = item.dataset.type;
+                    const location = item.dataset.location.toLowerCase();
+
+                    const matchesSearch = item.textContent.toLowerCase().includes(searchQuery);
+                    const matchesPrice = price >= minPrice && price <= maxPrice;
+                    const matchesType = !selectedType || type === selectedType;
+                    const matchesLocation = location.includes(locationQuery);
+
+                    if (matchesSearch && matchesPrice && matchesType && matchesLocation) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            };
+
+            // Lida com o arrasto dos controles deslizantes
+            const handleDrag = (event, handle, isMin) => {
+                const trackRect = track.getBoundingClientRect();
+                const trackWidth = trackRect.width;
+                let newPosition;
+
+                // Verifica se o evento é de toque ou mouse
+                if (event.type === 'touchmove' || event.type === 'touchstart') {
+                    newPosition = ((event.touches[0].clientX - trackRect.left) / trackWidth) * 100;
+                } else {
+                    newPosition = ((event.clientX - trackRect.left) / trackWidth) * 100;
+                }
+
+                if (isMin) {
+                    newPosition = Math.max(0, Math.min(newPosition, parseFloat(handleMax.style.left)));
+                    minInput.value = Math.round(min + (newPosition / 100) * (max - min));
+                } else {
+                    newPosition = Math.min(100, Math.max(newPosition, parseFloat(handleMin.style.left)));
+                    maxInput.value = Math.round(min + (newPosition / 100) * (max - min));
+                }
+                updateValues();
+            };
+
+            const addDragListeners = (handle, isMin) => {
+                const onMove = (event) => handleDrag(event, handle, isMin);
+                const onEnd = () => {
+                    document.removeEventListener('mousemove', onMove);
+                    document.removeEventListener('mouseup', onEnd);
+                    document.removeEventListener('touchmove', onMove);
+                    document.removeEventListener('touchend', onEnd);
+                };
+
+                // Adiciona os eventos para mouse e toque
+                document.addEventListener('mousemove', onMove);
+                document.addEventListener('mouseup', onEnd);
+                document.addEventListener('touchmove', onMove);
+                document.addEventListener('touchend', onEnd);
+            };
+
+            // Adiciona eventos de arrasto para os controles
+            handleMin.addEventListener('mousedown', () => addDragListeners(handleMin, true));
+            handleMax.addEventListener('mousedown', () => addDragListeners(handleMax, false));
+            handleMin.addEventListener('touchstart', () => addDragListeners(handleMin, true));
+            handleMax.addEventListener('touchstart', () => addDragListeners(handleMax, false));
+
+            // Adiciona eventos para os filtros
+            searchBar.addEventListener('input', filterResults);
+            priceMin.addEventListener('input', updateValues);
+            priceMax.addEventListener('input', updateValues);
+            typeFilter.addEventListener('change', filterResults);
+            locationFilter.addEventListener('input', filterResults);
+
+            // Inicializa os valores
+            updateValues();
+        });
 
           let filtroBtn = document.getElementById("filtroBtn")
           let filtros = document.getElementById("filtros")

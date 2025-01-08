@@ -241,6 +241,16 @@ body {
     line-height: 20px
 }
 
+#paginaPrincipal {
+    min-height: 100%;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px
+}
+
 img {
     max-width: 100%;
     vertical-align: middle;
@@ -2063,6 +2073,16 @@ textarea.w-input,textarea.w-select {
 }
 
 body {
+    color: #fcfcfc;
+    /* background-color: #020202; */
+    background-color: #fff;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px
+}
+
+#paginaPrincipal {
     color: #fcfcfc;
     /* background-color: #020202; */
     background-color: #fff;
@@ -5605,7 +5625,8 @@ OUTRO CSS -------------------------------------------------------- */
 }
 
 #gta, #forza, #valhalla, #mine, #dbd {
-    background-color: #000;
+    color: #000;
+    background-color: #ffffff;
     height: 100vh;
 }
 
@@ -5629,4 +5650,27 @@ OUTRO CSS -------------------------------------------------------- */
     display: none; /* Esconde o título */
   }
 
-  
+  #modalInfoClima {
+    display: none;
+    opacity: 0;
+}
+
+.hero_article-description h2 {
+    color: #fff;
+}
+
+/* #mainAreaRight {
+    display: none;
+}
+
+#otherRight {
+    display: block;
+} */
+
+#verTodosJogos {
+    display: none;
+    opacity: 0;
+    height: 86.7vh;
+    overflow-y: scroll;
+    background-color: #0e6cc4;
+}

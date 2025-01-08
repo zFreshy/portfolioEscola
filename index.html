@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="https://assets.website-files.com/64e45e949983886b710aa1a2/css/vision-bgs.3f614791f.min.css" rel="stylesheet" type="text/css"/> -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
 
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -28,27 +27,41 @@
 <!-- https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola/ -->
 <!-- https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/ -->
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/17.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/16.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/12.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/14.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/15.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/11.css">
-        <link href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/teste/portfolio/index.css" rel="stylesheet" type="text/css"/>
+    <link href="teste/games/ps/assets/css/google.css" rel="stylesheet"/>
+    <link href="teste/games/ps/assets/boxicons.min.css" rel="stylesheet"/>
+    <link rel="preload" href="teste/games/ps/assets/css/style.min.css" as="style" />
+    <link rel="stylesheet" href="teste/games/ps/assets/css/style.min.css" />
+    <link rel="stylesheet" href="teste/games/ps/main.css">
+    <link rel="stylesheet" type="text/css" href="teste/games/ps/assets/css/animate.min.css">
+    <script src="teste/games/ps/assets/js/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="teste/portfolio/17.css">
+        <link rel="stylesheet" href="teste/portfolio/16.css">
+        <link rel="stylesheet" href="teste/portfolio/12.css">
+        <link rel="stylesheet" href="teste/portfolio/14.css">
+        <link rel="stylesheet" href="teste/portfolio/15.css">
+        <link rel="stylesheet" href="teste/portfolio/11.css">
+        <link href="teste/portfolio/index.css" rel="stylesheet" type="text/css"/>
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/netflix.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/news.css">
+
+
+<link rel="stylesheet" href="netflix.css">
+
+<link rel="stylesheet" href="news.css">
         
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/styles2.css">
+<link rel="stylesheet" href="styles2.css">
+
+<link rel="stylesheet" href="gamesMore.css">
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/settings.css">
+<link rel="stylesheet" href="settings.css">
 
+<link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zFreshy/portfolioEscola@main/styles.css">
 
 
 
@@ -70,7 +83,8 @@
         });
     </script>
 </head>
-<body">
+
+<body id="paginaPrincipal">
     <div id="page-wrapper" class="page-wrapper">
         <div id="modalInfo1" class="modalInfo">
             <div class="modal_bg"></div>
@@ -89,6 +103,48 @@
                         <input type="email" class="input is-profile w-input" maxlength="256" name="email-4" data-name="Email 4" placeholder="" data-w-id="29aeb185-5a0e-3605-5b34-18e9ea9efc88" id="email-4" required=""/>
                     </div> -->
                     <div class="text-size-small text-color-grey">Informações.</div>
+                    <div class="spacer-s"></div>
+                    <!-- <a style="opacity:0.33"  class="save-button ix w-inline-block">
+                        <div>Confirm my email</div>
+                    </a> -->
+                    <div class="modal-css w-embed w-script">
+                        <!-- <style>
+                            .modal {
+                                position: fixed;
+                                display: none
+                                !important;
+                            }
+                        </style> -->
+                        <script></script>
+                    </div>
+                </div>
+                <div class="hide w-form-done">
+                    <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="hide w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="modalInfoClima" class="modalInfo">
+            <div class="modal_bg"></div>
+            <div id="modalInfoClimaClose" class="modal-close">
+                <div class="modal_close-icon w-embed">
+                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 10.586L9.172 7.757L7.757 9.172L10.586 12L7.757 14.828L9.172 16.243L12 13.414L14.828 16.243L16.243 14.828L13.414 12L16.243 9.172L14.828 7.757L12 10.586Z" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modalInfoCard">
+                <div id="wf-form-Email-Form" name="wf-form-Email-Form" data-name="Email Form" method="get" class="modal-form">
+                    <div class="modal-h1">Informações sobre o clima em sua cidade</div>
+                    <!-- <div class="input-wrapper">
+                        <label for="email-4" class="profile_label is-modal">Email Address</label>
+                        <input type="email" class="input is-profile w-input" maxlength="256" name="email-4" data-name="Email 4" placeholder="" data-w-id="29aeb185-5a0e-3605-5b34-18e9ea9efc88" id="email-4" required=""/>
+                    </div> -->
+                    <div class="text-size-small text-color-grey">Não está aparecendo? provavelmente houve um problema em chegar à API, provavelmente por conta da falta da permissão do acesso à localização, se você está vendo isso do google sites, não é possível possibilitar o acesso à localização devido às políticas do google.</div>
                     <div class="spacer-s"></div>
                     <!-- <a style="opacity:0.33"  class="save-button ix w-inline-block">
                         <div>Confirm my email</div>
@@ -359,11 +415,9 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="nav_widget-button">
+                                    <div id="portfolioIcone" class="nav_widget-button">
                                         <div class="html-embed w-embed">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9823 2.00119C11.2035 2.01667 9.58242 2.07325 8.29316 2.16486C7.83218 2.19761 7.7456 2.20827 7.55872 2.25533C6.9736 2.40265 6.47354 2.7624 6.14605 3.2716C5.98104 3.52817 5.86367 3.83373 5.81262 4.13962C5.78837 4.28496 5.78128 4.40878 5.75496 5.14663C5.74257 5.49368 5.73065 5.78973 5.72845 5.80452L5.72446 5.8314L5.60077 5.83737C5.21644 5.85594 4.39841 5.91101 4.22984 5.92967C3.85532 5.97114 3.49774 6.10087 3.18241 6.30972C2.61414 6.68607 2.23832 7.29304 2.15245 7.97316C2.13107 8.14256 2.06709 9.73902 2.03971 10.7867C1.98022 13.0628 1.98762 15.394 2.0616 17.6845C2.09739 18.7925 2.13809 19.6619 2.1617 19.8226C2.20326 20.1057 2.30766 20.4063 2.44565 20.6403C2.56495 20.8427 2.66675 20.9728 2.83816 21.1424C3.19848 21.4987 3.64077 21.7184 4.15137 21.7946C4.37364 21.8278 5.50576 21.8973 6.39839 21.9326C7.6477 21.9819 8.66223 22 10.1792 22C11.6962 22 12.7011 21.9821 13.9601 21.9327C14.8592 21.8974 15.9793 21.8285 16.2097 21.7942C16.9847 21.6789 17.6381 21.2069 17.9799 20.5154C18.1135 20.2452 18.1858 19.9942 18.2143 19.7018C18.223 19.6125 18.2475 19.0866 18.2665 18.5792C18.2714 18.4508 18.2776 18.3066 18.2805 18.2587L18.2856 18.1716L18.4826 18.1613C19.1115 18.1282 19.7556 18.0801 19.9003 18.0556C20.2471 17.9966 20.5347 17.8828 20.8264 17.6887C21.3135 17.3648 21.6566 16.8791 21.8032 16.3058C21.8501 16.1221 21.8607 16.0199 21.8822 15.5452C21.9302 14.4805 21.961 13.535 21.9888 12.2778C22.0038 11.5976 22.0037 8.66992 21.9887 7.99045C21.9526 6.35677 21.885 4.50963 21.8515 4.24334C21.796 3.80208 21.6163 3.38346 21.3319 3.03321C21.2599 2.94457 21.0769 2.76395 20.9872 2.69305C20.7717 2.52262 20.5125 2.38304 20.2571 2.29984C20.0603 2.23571 19.8878 2.20512 19.5922 2.18199C18.5226 2.09828 17.1386 2.03998 15.5898 2.01338C15.0742 2.00453 13.464 1.997 12.9823 2.00119ZM12.2956 3.83777C10.7513 3.86061 9.17101 3.92543 8.19382 4.00601C8.01464 4.02078 7.93989 4.03998 7.85757 4.09235C7.72561 4.17629 7.6363 4.32078 7.62266 4.47241C7.61852 4.51843 7.56874 5.75823 7.5709 5.76175C7.57136 5.76252 7.70448 5.75979 7.86669 5.75567C9.25612 5.7204 11.3485 5.72418 12.8649 5.76468C13.884 5.7919 14.7895 5.8326 15.568 5.88618C16.1512 5.92632 16.2527 5.93813 16.4546 5.98937C16.988 6.12476 17.4401 6.42826 17.7698 6.87233C18.023 7.21333 18.1872 7.65102 18.2184 8.06824C18.2368 8.31471 18.296 9.86438 18.3187 10.696C18.3671 12.4652 18.3759 14.7237 18.34 16.1148L18.3342 16.3387L18.4417 16.3327C19.0318 16.3001 19.5484 16.2617 19.6292 16.2446C19.8154 16.205 19.9675 16.0577 20.0136 15.8725C20.0273 15.8174 20.0339 15.729 20.0481 15.4069C20.2095 11.7551 20.2095 8.50259 20.0482 4.8657C20.0341 4.54875 20.0275 4.45936 20.0139 4.40522C19.9688 4.22468 19.8358 4.08177 19.6669 4.03244C19.6175 4.01802 19.4654 4.00425 19.0403 3.9757C17.969 3.90376 16.7579 3.85925 15.2682 3.83705C14.628 3.82752 12.9618 3.82791 12.2956 3.83777ZM8.47134 7.57191C7.53031 7.58776 6.48701 7.62196 5.7161 7.66224C5.11429 7.69369 4.46038 7.74 4.37551 7.7572C4.27761 7.77703 4.20844 7.81556 4.12896 7.89452C4.0535 7.96949 4.00654 8.05001 3.98732 8.1374C3.96254 8.25007 3.8866 10.3558 3.85904 11.6943C3.83851 12.6916 3.83851 15.0425 3.85904 16.0434C3.8889 17.4991 3.96282 19.5008 3.99066 19.6078C4.03438 19.7757 4.17711 19.9225 4.34283 19.97C4.38613 19.9825 4.64742 20.0093 4.72743 20.0096L4.76002 20.0097V19.7558C4.76002 19.3464 4.7977 19.0767 4.90025 18.752C5.21449 17.7572 6.03195 16.939 7.20941 16.4407C8.22941 16.0091 9.53957 15.8233 10.8702 15.9214C12.81 16.0644 14.3289 16.8054 15.0955 17.9827C15.3266 18.3377 15.4871 18.7406 15.5552 19.1367C15.5867 19.32 15.5979 19.4589 15.6041 19.7396L15.6099 20.0097L15.6368 20.0095C15.6964 20.0091 15.9619 19.9844 16.0009 19.9756C16.0828 19.9572 16.155 19.9148 16.2296 19.8414C16.3281 19.7445 16.3733 19.6507 16.3847 19.5195C16.4018 19.3233 16.4621 17.709 16.4848 16.8374C16.5344 14.9402 16.5344 12.7877 16.4848 10.8905C16.4623 10.0296 16.4018 8.41338 16.3847 8.21706C16.3717 8.06742 16.3 7.93766 16.1794 7.84513C16.077 7.76664 16.0154 7.75196 15.6854 7.72736C14.6382 7.64929 13.3456 7.59709 11.8176 7.57116C11.2516 7.56155 9.05698 7.56204 8.47134 7.57191ZM10.0749 8.92474C9.79541 8.94559 9.61652 8.97236 9.40695 9.02469C8.33109 9.29331 7.45487 10.0691 7.05393 11.1079C6.80658 11.7488 6.76493 12.4811 6.93762 13.1531C7.09023 13.747 7.38911 14.2665 7.83195 14.7075C8.11025 14.9846 8.39505 15.1886 8.73643 15.3552C9.3215 15.6407 9.95894 15.7519 10.6161 15.6831C11.5521 15.585 12.4258 15.0835 12.9888 14.3212C13.2482 13.9698 13.4572 13.525 13.5563 13.1133C13.6212 12.8434 13.6467 12.6175 13.6467 12.3124C13.6467 12.0716 13.6371 11.9462 13.6031 11.744C13.4656 10.926 13.0092 10.1604 12.3565 9.65242C11.8427 9.25262 11.2447 9.00927 10.6095 8.94148C10.4928 8.92903 10.158 8.91855 10.0749 8.92474ZM10.088 10.758C9.6021 10.8069 9.1572 11.0829 8.90572 11.4915C8.78688 11.6846 8.71398 11.8892 8.68467 12.1118C8.61539 12.6382 8.82198 13.1658 9.231 13.5072C9.43343 13.6762 9.68416 13.7952 9.94891 13.8479C10.0353 13.8652 10.0754 13.8679 10.2444 13.868C10.4148 13.8682 10.4528 13.8656 10.5393 13.8482C11.1997 13.7154 11.6986 13.1953 11.7956 12.5386C11.8134 12.4179 11.8135 12.2075 11.7957 12.0861C11.7204 11.5714 11.3851 11.1207 10.9137 10.9007C10.6926 10.7976 10.4806 10.7513 10.2401 10.7537C10.1732 10.7544 10.1047 10.7563 10.088 10.758ZM9.73596 17.7374C8.26216 17.8238 7.11806 18.3466 6.73379 19.1091C6.68134 19.2132 6.64593 19.3142 6.61963 19.4349C6.60303 19.511 6.60025 19.5565 6.59638 19.8161L6.592 20.1108L6.75594 20.1166C8.92991 20.1934 11.4284 20.1934 13.6024 20.1166L13.7662 20.1109L13.7621 19.8075C13.7586 19.5403 13.7559 19.4946 13.74 19.4246C13.6999 19.249 13.636 19.1018 13.5344 18.9509C13.0744 18.2675 11.9833 17.815 10.6063 17.7366C10.4277 17.7264 9.91511 17.7269 9.73596 17.7374Z" fill="currentColor"/>
-                                            </svg>
+                                            <i class="fa-solid fa-school-flag"></i>
                                         </div>
                                     </div>
                                     <div id="configuracoesIcone" class="nav_widget-button">
@@ -517,7 +571,7 @@
                                             <div class="text-size-small text-color-yellow500"><p id="city"></p></div>
                                         </div>
     
-                                        <div data-w-id="2b9bf5f9-d96c-4e3f-a253-1278022996e6" class="icon_24x24 info w-embed">
+                                        <div id="info2" data-w-id="2b9bf5f9-d96c-4e3f-a253-1278022996e6" class="icon_24x24 info w-embed">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.6067 1.67374C7.73219 1.74157 5.97596 2.30595 4.68048 3.25684C3.6977 3.97819 2.93942 4.9604 2.41549 6.1907C1.7473 7.75976 1.51454 9.63347 1.7646 11.4305C1.99364 13.0766 2.60181 14.5409 3.51158 15.6367C3.75998 15.936 4.08791 16.2601 4.39534 16.5102C5.7312 17.597 7.55101 18.2376 9.55537 18.3267C9.75232 18.3354 10.2466 18.3355 10.4416 18.3268C12.451 18.2373 14.2632 17.5997 15.6051 16.5101C15.9016 16.2693 16.2279 15.9482 16.475 15.6539C16.9452 15.0938 17.36 14.3879 17.659 13.6393C18.3421 11.9291 18.5148 9.89391 18.1377 7.99886C17.8626 6.61646 17.3189 5.39978 16.5425 4.42878C16.2713 4.08964 15.9226 3.73648 15.5948 3.46903C15.1618 3.11575 14.642 2.7902 14.12 2.54538C12.7798 1.91682 11.219 1.61539 9.6067 1.67374ZM9.61012 3.12162C8.62615 3.16737 7.71474 3.35642 6.88981 3.68589C5.85699 4.09838 5.07402 4.67815 4.48002 5.47029C3.77439 6.41126 3.30963 7.67992 3.16418 9.06216C3.12613 9.42368 3.11903 9.57451 3.11937 10.0136C3.11968 10.4164 3.1244 10.5312 3.15362 10.8453C3.2844 12.2513 3.7471 13.5468 4.45895 14.4999C4.88802 15.0744 5.41774 15.5356 6.09254 15.9223C6.24983 16.0124 6.58036 16.1759 6.75978 16.2524C8.75013 17.1009 11.249 17.101 13.2406 16.2525C13.4183 16.1768 13.7486 16.0132 13.9079 15.9222C14.5821 15.5365 15.1117 15.075 15.5435 14.4971C16.2672 13.5285 16.7315 12.2061 16.8534 10.7666C16.8777 10.4797 16.8812 10.3833 16.8813 10.0033C16.8813 9.57987 16.8734 9.41467 16.8362 9.06216C16.6853 7.63015 16.1944 6.32701 15.4473 5.37486C14.6829 4.40085 13.5668 3.72956 12.1046 3.36454C11.7256 3.26992 11.2629 3.19154 10.8693 3.15527C10.5619 3.12695 10.4622 3.12271 10.0618 3.12097C9.8416 3.12001 9.63835 3.12031 9.61012 3.12162ZM10.1812 5.33139C10.1547 5.33621 10.1147 5.34547 10.0924 5.35196C9.91776 5.40273 9.74301 5.55386 9.65826 5.72739C9.59823 5.8503 9.58274 5.95514 9.58274 6.23861C9.58274 6.4424 9.59165 6.55564 9.61383 6.63372C9.67708 6.85641 9.85915 7.04669 10.0799 7.12086C10.2165 7.16671 10.3992 7.16656 10.5408 7.12047C10.7198 7.06226 10.8921 6.90545 10.9728 6.72735C10.9845 6.70146 11.0022 6.65097 11.012 6.61516L11.0298 6.55006L11.03 6.24203C11.0301 5.94498 11.0296 5.93186 11.0148 5.87373C10.9637 5.67333 10.8296 5.50123 10.6484 5.40343C10.5149 5.3314 10.3343 5.30356 10.1812 5.33139ZM8.39366 8.07377C8.18579 8.09795 7.99688 8.22017 7.87384 8.41005C7.79226 8.53595 7.75765 8.68707 7.77055 8.86108C7.78287 9.02743 7.85306 9.17625 7.97823 9.30144C8.10357 9.42682 8.24495 9.49398 8.41806 9.5104C8.45829 9.51422 8.63902 9.5174 8.81969 9.51747C9.18978 9.5176 9.20686 9.51929 9.29874 9.5647C9.41586 9.62258 9.50696 9.72842 9.54963 9.85618L9.56564 9.90409L9.56746 11.2369L9.56929 12.5697L8.9755 12.572C8.4266 12.5742 8.3781 12.5753 8.334 12.5869C8.07763 12.6542 7.87169 12.857 7.80541 13.1075C7.78922 13.1687 7.7873 13.1883 7.7873 13.2923C7.7873 13.3964 7.78922 13.416 7.80541 13.4772C7.87177 13.728 8.07686 13.93 8.334 13.9979C8.37889 14.0097 8.43821 14.0107 9.3398 14.0142C9.86675 14.0162 10.7306 14.0163 11.2594 14.0142C12.3236 14.0101 12.2472 14.0134 12.3629 13.9664C12.558 13.887 12.723 13.7129 12.7845 13.5217C12.8304 13.3792 12.8304 13.2055 12.7845 13.063C12.723 12.8718 12.558 12.6977 12.3629 12.6183C12.2505 12.5726 12.2821 12.5746 11.6204 12.572L11.0199 12.5697L11.0197 11.2985C11.0196 10.0436 11.0167 9.85286 10.9963 9.71641C10.8893 9.00067 10.3956 8.4065 9.71356 8.17284C9.55208 8.11752 9.40546 8.08727 9.23102 8.07329C9.12735 8.06499 8.46593 8.06536 8.39366 8.07377Z" fill="currentColor"/>
                                             </svg>
@@ -813,7 +867,6 @@
                                                 <div class="c-logo">
                                                     <img src="https://www.dropbox.com/scl/fi/ndiey4ftvsmuku9op8oyy/oie_OWkthgZjYoTk.png?rlkey=a7q41wytd6bgea1x2m4o7cp2x&st=c67cl2ml&raw=1" loading="lazy" alt="" class="c-logo_image"/>
                                                 </div>
-                                                <!-- <a href="https://www.youtube.com/watch?v=9X6f_U-V6H0" target="_blank" class="c-button">Ver tutorial</a> -->
                                             </div>
                                         </div>
                                     </div>
@@ -1715,6 +1768,184 @@
                             
                             <div id="otherRight">
 
+                                <!-- <div id="verTodosJogos" class="container_blur space_between">
+                                    <div class="container">
+                                        <div id="jogosTitle" class="tilte_wrapper">
+                                            <div class="container_h">
+                                                <div class="icon_24x24 margin_right-tiny w-embed">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.38937 5.00774C4.99293 5.03039 4.6123 5.17939 4.29254 5.43708C4.01798 5.65835 3.82644 5.93367 3.68262 6.31379C2.88369 8.42537 2.12151 12.1073 2.00798 14.4036C1.98837 14.8002 2.00611 15.4194 2.04796 15.7994C2.1574 16.7931 2.44403 17.5235 2.93648 18.0638C3.49067 18.6719 4.32843 18.9967 5.35081 19C5.59663 19.0008 5.67913 18.9803 5.88637 18.8669C6.40267 18.5846 6.89967 18.1072 7.33442 17.4761C7.3715 17.4223 7.40246 17.3772 7.40321 17.3761C7.40397 17.3749 7.45631 17.3983 7.51951 17.4281C7.79484 17.5579 8.05078 17.6331 8.36709 17.6772C8.5187 17.6983 8.9102 17.6985 9.06117 17.6775C9.39213 17.6314 9.66512 17.5491 9.94334 17.4115C10.231 17.2692 10.4356 17.1234 10.6647 16.8974C10.7478 16.8155 10.8462 16.7101 10.8832 16.6633C11.1625 16.3107 11.3476 15.9185 11.4338 15.4968C11.4584 15.3763 11.4862 15.1724 11.4862 15.1121L11.4862 15.0845H11.9995H12.5127L12.5182 15.1462C12.5694 15.7235 12.7665 16.221 13.1193 16.6633C13.2108 16.778 13.4327 16.9992 13.5428 17.0854C13.9675 17.4182 14.4047 17.6035 14.9395 17.6773C15.0914 17.6983 15.4832 17.6984 15.6336 17.6775C15.924 17.6371 16.1637 17.5701 16.4156 17.459L16.5079 17.4183L16.6275 17.594C16.8331 17.8961 16.9783 18.0725 17.214 18.3064C17.4603 18.5508 17.6971 18.7319 17.9515 18.8705C18.153 18.9802 18.2357 19.0006 18.4764 19C19.2898 18.9977 20.0143 18.7927 20.5583 18.4108C20.7597 18.2695 21.0024 18.0437 21.1468 17.8634C21.6521 17.2325 21.9248 16.402 21.9915 15.2912C22.0027 15.1056 22.0029 14.5771 21.9918 14.3653C21.8912 12.4313 21.312 9.38053 20.6418 7.25427C20.5209 6.87077 20.3408 6.35643 20.2692 6.19038C20.0955 5.78774 19.7598 5.43518 19.355 5.23027C19.1258 5.11423 18.9171 5.05092 18.6456 5.01506C18.5434 5.00157 16.0476 4.99373 15.8978 5.00643C15.7192 5.02158 15.7125 5.02432 15.0484 5.35349L14.4419 5.65418H12.0002H9.55859L8.95213 5.35344C8.29653 5.02833 8.28131 5.02203 8.11677 5.00729C8.01261 4.99797 5.55345 4.99837 5.38937 5.00774ZM5.44801 6.60777C5.37699 6.62173 5.29412 6.6751 5.25385 6.73281C5.22704 6.77124 5.14056 6.99851 5.03275 7.31384C4.69197 8.31061 4.359 9.60749 4.08763 10.9949C3.85961 12.1607 3.68776 13.3734 3.62871 14.2334C3.57652 14.9932 3.62137 15.7109 3.75297 16.2219C3.81738 16.4721 3.90409 16.68 4.01124 16.8414C4.07895 16.9434 4.21178 17.0788 4.30552 17.1415C4.49888 17.2708 4.74406 17.3504 5.05946 17.3863C5.22274 17.4049 5.21932 17.4053 5.28268 17.3598C5.57688 17.1486 5.92189 16.742 6.20922 16.2679L6.24767 16.2045L6.19867 16.102C6.06453 15.8212 5.97698 15.4942 5.94985 15.1726C5.93735 15.0243 5.94433 14.7155 5.96328 14.5781C6.06809 13.8184 6.47947 13.1392 7.10316 12.6962C7.48345 12.426 7.90717 12.2633 8.38851 12.2024C8.53363 12.1841 8.8636 12.1815 9.00548 12.1976C9.54659 12.2589 10.0347 12.4594 10.4579 12.794C10.5674 12.8805 10.7896 13.1017 10.8793 13.2134C10.9194 13.2633 10.9808 13.3466 11.0157 13.3984L11.0792 13.4927L12.0014 13.4928L12.9236 13.4929L12.9668 13.4269C13.2543 12.9879 13.6967 12.6179 14.1798 12.4122C14.5465 12.256 14.8814 12.1877 15.2823 12.1872C15.5542 12.1868 15.7336 12.2085 15.9806 12.2717C17.158 12.5727 18.0083 13.6122 18.0575 14.8108C18.0778 15.3036 17.9824 15.752 17.7662 16.1809L17.7088 16.2948L17.7679 16.3957C18.0271 16.838 18.302 17.1739 18.5598 17.3634L18.6112 17.4012L18.6841 17.3955C18.8728 17.381 19.0999 17.3375 19.2625 17.2847C19.3692 17.2501 19.5791 17.1431 19.6613 17.0815C19.8329 16.9528 19.9662 16.7894 20.0752 16.5739C20.2693 16.1901 20.3614 15.7503 20.3903 15.0687C20.4483 13.7014 19.9277 10.5611 19.2572 8.23304C19.0933 7.66419 18.8368 6.89809 18.7741 6.79012C18.7319 6.71751 18.6458 6.65498 18.5385 6.61908C18.4936 6.60409 18.4339 6.6032 17.3176 6.60088C16.4644 6.59911 16.1375 6.60106 16.1206 6.60799L16.0974 6.61754L16.0939 7.87851C16.0901 9.23752 16.0913 9.20005 16.0446 9.4246C15.9083 10.0799 15.4921 10.6391 14.9203 10.9353C14.7201 11.039 14.5403 11.1003 14.314 11.1422L14.1897 11.1651H12.0046H9.81953L9.70864 11.1457C9.49034 11.1076 9.32673 11.055 9.13401 10.9611C8.45468 10.6301 7.99973 9.96244 7.92218 9.18268C7.91603 9.12091 7.91293 8.67607 7.91293 7.8573V6.62488L7.88765 6.6119C7.86532 6.60043 7.72358 6.59902 6.673 6.59985C6.01884 6.60036 5.4676 6.60393 5.44801 6.60777ZM9.52596 8.17985C9.52845 9.09674 9.52865 9.10596 9.54668 9.16176C9.59919 9.3242 9.70279 9.45601 9.82977 9.52194C9.92643 9.57212 9.7868 9.56908 12.0003 9.56908C14.2194 9.56908 14.0717 9.57236 14.1757 9.52088C14.2379 9.4901 14.3508 9.37844 14.3934 9.30544C14.432 9.23944 14.4662 9.1368 14.477 9.05454C14.4813 9.02167 14.4849 8.60317 14.4851 8.12453L14.4853 7.25427H12.0044H9.52346L9.52596 8.17985ZM8.54069 13.7952C8.40129 13.8168 8.22814 13.8785 8.1143 13.9471C7.93582 14.0545 7.765 14.2373 7.67401 14.4181C7.62111 14.5232 7.58002 14.6522 7.56198 14.7696C7.54801 14.8605 7.54984 15.0336 7.5658 15.1321C7.63189 15.5401 7.93514 15.8977 8.32969 16.033C8.4555 16.0762 8.5289 16.0894 8.67145 16.0947C8.8809 16.1025 9.04271 16.0687 9.22861 15.9786C9.55562 15.8201 9.78277 15.5278 9.85921 15.1669C9.8831 15.0542 9.88536 14.8537 9.86406 14.7379C9.79013 14.3363 9.50551 13.9966 9.12544 13.8563C8.94235 13.7887 8.72716 13.7662 8.54069 13.7952ZM15.1109 13.7954C14.6892 13.8616 14.3407 14.1453 14.1929 14.5426C14.0468 14.9353 14.1308 15.3894 14.4069 15.7C14.545 15.8554 14.719 15.9718 14.9095 16.0362C15.047 16.0826 15.1162 16.093 15.2865 16.093C15.4029 16.093 15.4587 16.0893 15.5136 16.0776C15.717 16.0346 15.9055 15.9423 16.0513 15.8145C16.2513 15.6392 16.3758 15.4248 16.4309 15.1611C16.4571 15.0357 16.4572 14.8441 16.4311 14.7195C16.361 14.3847 16.1615 14.107 15.8692 13.9371C15.6504 13.8099 15.3617 13.756 15.1109 13.7954Z" fill="currentColor"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="text-size-small text-weight-semibold">Biblioteca</div>
+                                            </div>
+                                            <div class="container_h">
+                                                <i id="sairJogos" class="fa-solid fa-x"></i>
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="body2">
+                                            
+
+                                            <div data-w-id="449b0729-1520-2247-f1ca-36495fd67d4a" class="section222">
+                                                <div class="container2 no-paddings">
+                                                    <div class="company-number-facts-holder search-wrapper2222">
+                                                        <div fs-formsubmit-element="form" fs-cmsfilter-element="filters" class="form-block-2 w-form">
+                                                            <div id="email-form" name="email-form" data-name="Email Form" method="get" class="form2222" data-wf-page-id="66e80addec2c6c7d33babfb2" data-wf-element-id="0a138bb0-0a3f-5339-0c78-baaa08e1d2e7">
+                                                                <div>
+                                                                    <input class="searching w-input2" maxlength="256" name="Search" fs-cmsfilter-field="*" data-name="Search..." placeholder="Search..." type="text" id="Search">
+                                                                    <div class="white pt-16" data-wg-notranslate="">
+                                                                        Essa é sua biblioteca de jogos, busca ter mais? acesse a <a class="text-link color">loja</a>.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <section class="section _100vh">
+                                                <div class="w-layout-blockcontainer container pt-0 w-container">
+                                                    <div class="catalog_wrapper">
+                                                        <div id="apps-collection" class="clw_apps w-dyn-list">
+                                                            <div fs-cmsload-mode="render-all" fs-cmsfilter-element="list" fs-cmssort-element="list" fs-cmsload-element="list" role="list" class="cl_apps w-dyn-items">
+                                                                <div id="w-node-e30fc4d7-bde1-68be-6bce-aec67b707462-33babfb2" role="listitem" class="ci_apps w-dyn-item">
+                                                                    <a class="link-block-24 w-inline-block">
+                                                                        <div id="appCard" class="app-holder">
+                                                                            <div class="app-icon-holder">
+                                                                                <div class="icon_img w-embed">
+                                                                                    <img src="https://www.dropbox.com/scl/fi/5wwfuxslr62p57lyk2gn6/Grand_Theft_Auto_V_capa.png?rlkey=yg5hr380ubkzgewsqtlbjg6z4&st=f1xboqky&raw=1" alt="App icon" width="80" height="auto">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="gtaBtn2" class="usp-content-wrapper">
+                                                                                <div fs-cmsfilter-field="name" class="app-title small apps_overview" data-wg-notranslate="">Grand Theft Auto V</div>
+                                                                                <p class="app_description u-line-clamp-3">Grand Theft Auto V para PC oferece aos jogadores a opção de explorar o gigantesco e premiado mundo de Los Santos e Blaine County em resoluções de até 4K e além, assim como a chance de experimentar o jogo rodando a 60 FPS (quadros por segundo).</p>
+                                                                                <div class="experience-paragraph-holder" data-wg-notranslate="">
+                                                                                    <div id="version_date" fs-cmssort-field="update-date" fs-cmssort-type="date" class="bijgewerkt">11-10-2024</div>
+                                                                                    <div id="date_created" fs-cmssort-field="toegevoegd" fs-cmssort-type="date" class="toegevoegd">08-03-2024</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bundle_id" data-wg-notranslate="">rockstargtav.com</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div id="w-node-e30fc4d7-bde1-68be-6bce-aec67b707462-33babfb2" role="listitem" class="ci_apps w-dyn-item">
+                                                                    <a class="link-block-24 w-inline-block">
+                                                                        <div id="appCard" class="app-holder">
+                                                                            <div class="app-icon-holder">
+                                                                                <div class="icon_img w-embed">
+                                                                                    <img src="https://www.dropbox.com/scl/fi/n055hee7xgstrginxv8n2/apps.28758.13734397844529069.202e3fc9-37d6-4853-a58b-fabe504b71e8.jpg?rlkey=4bxtv53oq8xoqcuqvm0pf1j6i&st=mn6sa18o&raw=1" alt="App icon" width="80" height="auto">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="forzaBtn2" class="usp-content-wrapper">
+                                                                                <div fs-cmsfilter-field="name" class="app-title small apps_overview" data-wg-notranslate="">Forza Horizon 5</div>
+                                                                                <p class="app_description u-line-clamp-3">Explore as vibrantes paisagens de mundo aberto do México com ação de direção ilimitada e divertida nos melhores carros do mundo. Participe de um jogo emocionante de perseguição com nossa nova experiência multijogador 5v1: Hide & Seek.</p>
+                                                                                <div class="experience-paragraph-holder" data-wg-notranslate="">
+                                                                                    <div id="version_date" fs-cmssort-field="update-date" fs-cmssort-type="date" class="bijgewerkt">11-11-2024</div>
+                                                                                    <div id="date_created" fs-cmssort-field="toegevoegd" fs-cmssort-type="date" class="toegevoegd">03-05-2022</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bundle_id" data-wg-notranslate="">fh5.com</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div id="w-node-e30fc4d7-bde1-68be-6bce-aec67b707462-33babfb2" role="listitem" class="ci_apps w-dyn-item">
+                                                                    <a class="link-block-24 w-inline-block">
+                                                                        <div id="appCard" class="app-holder">
+                                                                            <div class="app-icon-holder">
+                                                                                <div class="icon_img w-embed">
+                                                                                    <img src="https://www.dropbox.com/scl/fi/ms142ztf1mmb7fegx6kzc/Assassins_Creed_Valhalla_capa.png?rlkey=eozs4eea0kowvwul7jph1uyqn&st=qoxn639h&dl=1" alt="App icon" width="80" height="auto">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="valhallaBtn2" class="usp-content-wrapper">
+                                                                                <div fs-cmsfilter-field="name" class="app-title small apps_overview" data-wg-notranslate="">Assassin's Creed Valhalla</div>
+                                                                                <p class="app_description u-line-clamp-3">Assassin’s Creed Valhalla é um jogo de ação e aventura no qual você é um guerreiro viking criado em contos de batalha e glória. Explore um mundo aberto dinâmico ambientado na Idade das Trevas da Inglaterra. Ataque seus inimigos e expanda seu assentamento para ganhar seu lugar entre os deuses em Valhalla.</p>
+                                                                                <div class="experience-paragraph-holder" data-wg-notranslate="">
+                                                                                    <div id="version_date" fs-cmssort-field="update-date" fs-cmssort-type="date" class="bijgewerkt w-dyn-bind-empty"></div>
+                                                                                    <div id="date_created" fs-cmssort-field="toegevoegd" fs-cmssort-type="date" class="toegevoegd">05-03-2022</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bundle_id" data-wg-notranslate="">acvalhalla.com</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div id="w-node-e30fc4d7-bde1-68be-6bce-aec67b707462-33babfb2" role="listitem" class="ci_apps w-dyn-item">
+                                                                    <a class="link-block-24 w-inline-block">
+                                                                        <div id="appCard" class="app-holder">
+                                                                            <div class="app-icon-holder">
+                                                                                <div class="icon_img w-embed">
+                                                                                    <img src="https://www.dropbox.com/scl/fi/moj3q0m8nh5bg5fgwdtjg/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.avif?rlkey=e40a9qin6nc0alpjpnr5vew4b&st=vucsc8hk&dl=1" alt="App icon" width="80" height="auto">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="mineBtn2" class="usp-content-wrapper">
+                                                                                <div fs-cmsfilter-field="name" class="app-title small apps_overview" data-wg-notranslate="">Minecraft</div>
+                                                                                <p class="app_description u-line-clamp-3">Minecraft é um jogo eletrônico sandbox de sobrevivência criado pelo desenvolvedor sueco Markus "Notch" Persson e posteriormente desenvolvido e publicado pela Mojang Studios, cuja propriedade intelectual foi obtida pela Microsoft em 2014.</p>
+                                                                                <div class="experience-paragraph-holder" data-wg-notranslate="">
+                                                                                    <div id="version_date" fs-cmssort-field="update-date" fs-cmssort-type="date" class="bijgewerkt">24-10-2024</div>
+                                                                                    <div id="date_created" fs-cmssort-field="toegevoegd" fs-cmssort-type="date" class="toegevoegd">02-01-2021</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bundle_id" data-wg-notranslate="">minecraft.com</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div id="w-node-e30fc4d7-bde1-68be-6bce-aec67b707462-33babfb2" role="listitem" class="ci_apps w-dyn-item">
+                                                                    <a class="link-block-24 w-inline-block">
+                                                                        <div id="appCard" class="app-holder">
+                                                                            <div class="app-icon-holder">
+                                                                                <div class="icon_img w-embed">
+                                                                                    <img src="https://www.dropbox.com/scl/fi/3alfk919wpbcqt1l2t95g/EGS_DeadbyDaylight_BehaviourInteractive_S2_1200x1600-a1c30209e3b9fb63144daa9b5670f503.jpg?rlkey=a9hgwg8cdqs28cxnx1z3vd2sh&st=75rqej8g&dl=1" alt="App icon" width="80" height="auto">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="dbdBtn2" class="usp-content-wrapper">
+                                                                                <div fs-cmsfilter-field="name" class="app-title small apps_overview" data-wg-notranslate="">Dead by Daylight</div>
+                                                                                <p class="app_description u-line-clamp-3">Presos para sempre em um reino de mal sobrenatural onde nem mesmo a morte é uma fuga, quatro Sobreviventes determinados enfrentam um Assassino sanguinário em um jogo cruel de nervos e inteligência. Escolha um lado e entre em um mundo de tensão e terror com o melhor multijogador assimétrico dos jogos de terror.</p>
+                                                                                <div class="experience-paragraph-holder" data-wg-notranslate="">
+                                                                                    <div id="version_date" fs-cmssort-field="update-date" fs-cmssort-type="date" class="bijgewerkt">25-08-2023</div>
+                                                                                    <div id="date_created" fs-cmssort-field="toegevoegd" fs-cmssort-type="date" class="toegevoegd">07-04-2023</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bundle_id" data-wg-notranslate="">dbd.com</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+
+                                            <script>
+                                                // Seleciona a barra de pesquisa e os cards do catálogo
+                                                    const searchInput = document.getElementById('Search');
+                                                    const cards = document.querySelectorAll('.ci_apps');
+
+                                                    // Adiciona um evento de escuta ao input de pesquisa
+                                                    searchInput.addEventListener('input', () => {
+                                                        const query = searchInput.value.toLowerCase(); // Obtém o valor do input em letras minúsculas
+
+                                                        cards.forEach(card => {
+                                                            const title = card.querySelector('.app-title').textContent.toLowerCase(); // Obtém o título do card em letras minúsculas
+                                                            
+                                                            // Mostra ou oculta o card com base na correspondência do título
+                                                            if (title.includes(query)) {
+                                                                card.style.display = 'block'; // Mostra o card
+                                                            } else {
+                                                                card.style.display = 'none'; // Oculta o card
+                                                            }
+                                                        });
+                                                    });
+
+                                            </script>
+
+
+                                        </div>
+                                    </div>
+                                </div> -->
+                                
+
                                 <div id="appNetflix" class="container_blur space_between">
                                     <div class="container">
                                         <div id="netflixTitle" class="tilte_wrapper">
@@ -1740,12 +1971,7 @@
                                                     <div class="hero-wrapper-normal">
                                                         <div class="hero-wrapper">
                                                             <h1 class="h1">Encontre seus próximos filmes favoritos.</h1>
-                                                            <!-- <a href="#Subscribe" class="button w-button">Stay Updated</a> -->
                                                         </div>
-                                                        <!-- <div class="logo-wrapper">
-                                                            <div class="tag-header logos">FROM YOUR FAVOURITE CHANNELS</div>
-                                                            <img src="https://cdn.prod.website-files.com/6034e23d52472e5a3ac06771/6034e74555f275c3c802bf72_logos.png" loading="lazy" width="393" alt="" class="image-9"/>
-                                                        </div> -->
                                                     </div>
                                                     <div class="view-more">
                                                         <img src="https://cdn.prod.website-files.com/6034e23d52472e5a3ac06771/6037015fc64ae12a6f2aee12_left-arrow.svg" loading="lazy" width="17" alt="" class="image-10"/>
@@ -1982,8 +2208,8 @@
                                                                                     <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse.webp 1920w" class="hero_articles_thumbnail"/>
                                                                                 </div>
                                                                                 <div class="hero_article-description">
-                                                                                    <h2 class="heading-style-h4">View from Orbit: Witnessing a Planetary Eclipse</h2>
-                                                                                    <div>Astronauts capture stunning images of a planetary eclipse from orbit, offering a unique perspective on this celestial event.</div>
+                                                                                    <h2 class="heading-style-h4">Visão da órbita: testemunhando um eclipse planetário</h2>
+                                                                                    <div>Astronautas capturam imagens impressionantes de um eclipse planetário em órbita, oferecendo uma perspectiva única sobre este evento celestial.</div>
                                                                                 </div>
                                                                             </a>
                                                                         </div>
@@ -1993,8 +2219,8 @@
                                                                                     <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant.jpg" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-500.jpg 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-800.jpg 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-1080.jpg 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-1600.jpg 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant.jpg 1920w" class="hero_articles_thumbnail"/>
                                                                                 </div>
                                                                                 <div class="hero_article-description">
-                                                                                    <h2 class="heading-style-h4">Abandoned ancient satellite found</h2>
-                                                                                    <div>Astronomers from the Galactic Observatory Initiative report the detection of an enigmatic relic, labeled &quot;Eridani-12&quot;.</div>
+                                                                                    <h2 class="heading-style-h4">Satélite antigo abandonado é encontrado</h2>
+                                                                                    <div>Astrônomos da Iniciativa do Observatório Galáctico relatam a detecção de uma relíquia enigmática, denominada &quot;Eridani-12&quot;.</div>
                                                                                 </div>
                                                                             </a>
                                                                         </div>
@@ -2004,8 +2230,8 @@
                                                                                     <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo.webp 1920w" class="hero_articles_thumbnail"/>
                                                                                 </div>
                                                                                 <div class="hero_article-description">
-                                                                                    <h2 class="heading-style-h4">In the Halo of the Star</h2>
-                                                                                    <div>Astronomers announce a groundbreaking discovery: a halo surrounding a distant star, shedding light on the complex interplay of celestial phenomena.</div>
+                                                                                    <h2 class="heading-style-h4">No Halo da Estrela</h2>
+                                                                                    <div>Astrônomos anunciam uma descoberta inovadora: um halo ao redor de uma estrela distante, lançando luz sobre a complexa interação de fenômenos celestes.</div>
                                                                                 </div>
                                                                             </a>
                                                                         </div>
@@ -2015,8 +2241,8 @@
                                                                                     <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat.webp 1920w" class="hero_articles_thumbnail"/>
                                                                                 </div>
                                                                                 <div class="hero_article-description">
-                                                                                    <h2 class="heading-style-h4">The mystery of the dying Sun</h2>
-                                                                                    <div>Scientists embark on a quest to decipher the enigmatic signals emanating from our Sun, sparking intrigue and concern about its future.</div>
+                                                                                    <h2 class="heading-style-h4">O mistério do Sol moribundo</h2>
+                                                                                    <div>Cientistas embarcam em uma jornada para decifrar os sinais enigmáticos que emanam do nosso Sol, gerando intriga e preocupação sobre seu futuro.</div>
                                                                                 </div>
                                                                             </a>
                                                                         </div>
@@ -2042,21 +2268,21 @@
                                                         <div class="article-hero_tags_list-wrapper w-dyn-list">
                                                             <div role="list" class="article-hero_tags_list w-dyn-items">
                                                                 <div role="listitem" class="article-hero_tag w-dyn-item">
-                                                                    <div>Exploration</div>
+                                                                    <div>Exploração</div>
                                                                 </div>
                                                                 <div role="listitem" class="article-hero_tag w-dyn-item">
-                                                                    <div>Space beauty</div>
+                                                                    <div>Beleza Espacial</div>
                                                                 </div>
                                                             </div>
                                                             </div>
                                                             <div class="spacer-xsmall">
                                     
                                                             </div>
-                                                            <h1>View from Orbit: Witnessing a Planetary Eclipse</h1>
+                                                            <h1>Visão da órbita: testemunhando um eclipse planetário</h1>
                                                             <div class="spacer-small">
                                     
                                                             </div>
-                                                            <p class="text-size-medium">Astronauts capture stunning images of a planetary eclipse from orbit, offering a unique perspective on this celestial event.</p>
+                                                            <p class="text-size-medium">Astronautas capturam imagens impressionantes de um eclipse planetário em órbita, oferecendo uma perspectiva única sobre este evento celestial.</p>
                                                         </div>
                                                     </div>
                                                     </div>
@@ -2075,39 +2301,11 @@
                                         <div class="padding-global padding-section-small">
                                             <div class="container-small">
                                                 <div og-article="true" class="text-rich-text text-size-medium w-richtext">
-                                                    <p>In a rare and captivating event, astronauts aboard the orbital observatory have captured breathtaking images of a planetary eclipse from space. This unique vantage point provides an unparalleled perspective on a phenomenon that has fascinated humanity for centuries.</p><p>The planetary eclipse, observed from orbit, occurred when one celestial body passed in front of another, casting a shadow and creating a striking visual spectacle. The images, transmitted back to Earth, reveal the intricate dance of light and shadow with a clarity and detail that ground-based observations cannot match.</p><p>Dr. Anika Sharma, the mission&#x27;s chief scientist, explains the significance of these observations. &quot;Witnessing a planetary eclipse from orbit allows us to study the interactions between celestial bodies with unprecedented precision. It offers insights into the dynamics of planetary motion and the behavior of atmospheres under varying light conditions.&quot;</p><p>The eclipse, involving a distant planet and its moon, has provided valuable data for astronomers. The interplay of light and shadow has revealed details about the atmospheric composition and surface features of the eclipsing bodies, contributing to our understanding of planetary science.</p><p>This event also highlights the technological advancements that make such observations possible. High-resolution cameras and spectrometers aboard the orbital observatory have captured data that will be analyzed for years to come, offering clues about the formation and evolution of planetary systems.</p><p>The images and data collected during this planetary eclipse add to a growing body of knowledge about the universe. They remind us of the intricate and dynamic nature of celestial phenomena, sparking wonder and curiosity about the cosmos.</p><p>As the orbital observatory continues its mission, further observations of eclipses and other celestial events are anticipated. Stay informed by visiting Space News for the latest updates on this and other groundbreaking discoveries in space exploration and astronomy.</p>
+                                                    <p>Em um evento raro e cativante, os astronautas a bordo do observatório orbital capturaram imagens de tirar o fôlego de um eclipse planetário do espaço. Este ponto de vista único fornece uma perspectiva incomparável sobre um fenômeno que fascina a humanidade há séculos.</p><p>O eclipse planetário, observado da órbita, ocorreu quando um corpo celeste passou na frente de outro, projetando uma sombra e criando um espetáculo visual impressionante. As imagens, transmitidas de volta à Terra, revelam a intrincada dança de luz e sombra com uma clareza e detalhes que as observações terrestres não conseguem igualar.</p><p>A Dra. Anika Sharma, cientista-chefe da missão, explica o significado dessas observações. Testemunhar um eclipse planetário da órbita nos permite estudar as interações entre corpos celestes com precisão sem precedentes. Ele oferece insights sobre a dinâmica do movimento planetário e o comportamento das atmosferas sob condições de luz variáveis.</p><p>O eclipse, envolvendo um planeta distante e sua lua, forneceu dados valiosos para os astrônomos. A interação de luz e sombra revelou detalhes sobre a composição atmosférica e as características da superfície dos corpos eclipsantes, contribuindo para nossa compreensão da ciência planetária.</p><p>Este evento também destaca os avanços tecnológicos que tornam tais observações possíveis. Câmeras de alta resolução e espectrômetros a bordo do observatório orbital capturaram dados que serão analisados ​​nos próximos anos, oferecendo pistas sobre a formação e evolução dos sistemas planetários.</p><p>As imagens e dados coletados durante este eclipse planetário se somam a um crescente corpo de conhecimento sobre o universo. Eles nos lembram da natureza intrincada e dinâmica dos fenômenos celestes, despertando admiração e curiosidade sobre o cosmos.</p><p>À medida que o observatório orbital continua sua missão, mais observações de eclipses e outros eventos celestes são antecipadas. Mantenha-se informado visitando o Space News para as últimas atualizações sobre esta e outras descobertas inovadoras em exploração espacial e astronomia.</p>
                                                     </div>
                                                     <div class="spacer-medium">
                                     
                                                     </div>
-                                                    <!-- <h2 class="heading-style-h3">Other articles</h2>
-                                                    <div class="spacer-small"></div>
-                                                    <div class="hero_articles_list-wrapper w-dyn-list">
-                                                        <div role="list" class="hero_articles_list is-list w-dyn-items">
-                                                            <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                                <a href="/example-blog/abandoned-ancient-satellite-found-in-gas-giant-orbit" class="hero_articles_item-link w-inline-block">
-                                                                    <div class="hero_articles_thumbnail-wrapper">
-                                                                        <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant.jpg" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-500.jpg 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-800.jpg 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-1080.jpg 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-1600.jpg 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant.jpg 1920w" class="hero_articles_thumbnail"/></div><h2 class="heading-style-h4">Abandoned ancient satellite found in gas giant orbit</h2>
-                                                                        </a>
-                                                                        </div>
-                                                                        <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                                            <a href="/example-blog/in-the-halo-of-the-star" class="hero_articles_item-link w-inline-block">
-                                                                                <div class="hero_articles_thumbnail-wrapper">
-                                                                                    <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo.webp 1920w" class="hero_articles_thumbnail"/>
-                                                                                    </div>
-                                                                                    <h2 class="heading-style-h4">In the Halo of the Star</h2>
-                                                                                    </a>
-                                                                                    </div>
-                                                                                    <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                                                        <a href="/example-blog/the-mystery-of-the-dying-sun" class="hero_articles_item-link w-inline-block">
-                                                                                            <div class="hero_articles_thumbnail-wrapper">
-                                                                                                <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat.webp 1920w" class="hero_articles_thumbnail"/>
-                                                                                                </div>
-                                                                                                <h2 class="heading-style-h4">The mystery of the dying Sun</h2>
-                                                                                                </a>
-                                                                                                </div>
-                                                                                                </div>
-                                                                                                </div> -->
                                                                                                 </div>
                                                                                                 </div>
                                                                                                 </header>
@@ -2127,21 +2325,21 @@
                                                                 <div class="article-hero_tags_list-wrapper w-dyn-list">
                                                                     <div role="list" class="article-hero_tags_list w-dyn-items">
                                                                         <div role="listitem" class="article-hero_tag w-dyn-item">
-                                                                            <div>Breaking</div>
+                                                                            <div>Chocante</div>
                                                                         </div>
                                                                         <div role="listitem" class="article-hero_tag w-dyn-item">
-                                                                            <div>News</div>
+                                                                            <div>Na Boca do Povo</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="spacer-xsmall">
                                     
                                                                 </div>
-                                                                <h1>Abandoned ancient satellite found in gas giant orbit</h1>
+                                                                <h1>Antigo satélite abandonado é encontrado em órbita de gigante gasoso</h1>
                                                                 <div class="spacer-small">
                                     
                                                                 </div>
-                                                                <p class="text-size-medium">Astronomers from the Galactic Observatory Initiative report the detection of an enigmatic relic, labeled &quot;Eridani-12,&quot; orbiting a gas giant in a remote sector of our galaxy.</p>
+                                                                <p class="text-size-medium">Astronomers from the Galactic Observatory Initiative report the detection of an enigmatic relic, labeled Eridani-12, orbiting a gas giant in a remote sector of our galaxy.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2163,44 +2361,17 @@
                                         <div class="padding-global padding-section-small">
                                             <div class="container-small">
                                                 <div og-article="true" class="text-rich-text text-size-medium w-richtext">
-                                                    <p>In a remote corner of our galaxy, astronomers have uncovered a mysterious artifact that challenges our understanding of ancient civilizations and their technological prowess. Dubbed &quot;Eridani-12,&quot; this enigmatic relic was recently detected orbiting a gas giant by researchers from the Galactic Observatory Initiative.</p>
-                                                    <p>Initial observations of Eridani-12 have left scientists intrigued and eager to unravel its secrets. Unlike anything previously encountered, the structure and composition of this ancient satellite hint at a level of sophistication far beyond our current understanding.</p>
-                                                    <p>Dr. Emily Park, the lead astronomer on the discovery team, emphasizes the significance of this find. &quot;Eridani-12 represents a unique opportunity to delve into the distant past of our galaxy. Its presence raises profound questions about the existence of advanced civilizations predating our own.&quot;</p>
-                                                    <p>Speculation abounds regarding the origins and purpose of Eridani-12. Some experts suggest it could be the remnants of an ancient exploration mission, while others speculate about its role in a long-forgotten galactic civilization.</p>
-                                                    <p>Efforts to study Eridani-12 in greater detail are already underway, utilizing cutting-edge technology and analytical methods. Researchers hope to uncover clues about the civilization responsible for its creation, as well as the circumstances surrounding its abandonment.</p>
-                                                    <p>The discovery of Eridani-12 serves as a stark reminder of the vastness and complexity of the universe. With each new revelation, our understanding of the cosmos is expanded, opening doors to new possibilities and insights.</p>
-                                                    <p>As scientists continue their investigations, updates on Eridani-12 and other celestial discoveries will be provided. Stay informed by visiting Space News for the latest developments in space exploration and the quest to unlock the mysteries of the universe.</p>
+                                                    <p>Em um canto remoto da nossa galáxia, astrônomos descobriram um artefato misterioso que desafia nossa compreensão de civilizações antigas e suas proezas tecnológicas. Chamado de Eridani-12, esta relíquia enigmática foi recentemente detectada orbitando um gigante gasoso por pesquisadores da Galactic Observatory Initiative.</p>
+                                                    <p>Observações iniciais de Eridani-12 deixaram cientistas intrigados e ansiosos para desvendar seus segredos. Diferente de tudo o que já foi encontrado, a estrutura e a composição deste antigo satélite sugerem um nível de sofisticação muito além da nossa compreensão atual.</p>
+                                                    <p>Dra. Emily Park, a astrônoma líder da equipe de descoberta, enfatiza a importância desta descoberta. &quot;Eridani-12 representa uma oportunidade única de mergulhar no passado distante da nossa galáxia. Sua presença levanta questões profundas sobre a existência de civilizações avançadas anteriores à nossa.</p>
+                                                    <p>A especulação abunda sobre as origens e o propósito de Eridani-12. Alguns especialistas sugerem que pode ser o que resta de uma antiga missão de exploração, enquanto outros especulam sobre seu papel em uma civilização galáctica há muito esquecida.</p>
+                                                    <p>Esforços para estudar Eridani-12 em maiores detalhes já estão em andamento, utilizando tecnologia de ponta e métodos analíticos. Os pesquisadores esperam descobrir pistas sobre a civilização responsável por sua criação, bem como as circunstâncias que cercam seu abandono.</p>
+                                                    <p>A descoberta de Eridani-12 serve como um lembrete gritante da vastidão e complexidade do universo. Com cada nova revelação, nossa compreensão do cosmos é expandida, abrindo portas para novas possibilidades e percepções.</p>
+                                                    <p>À medida que os cientistas continuam suas investigações, atualizações sobre Eridani-12 e outras descobertas celestiais serão fornecidas. Mantenha-se informado visitando o Space News para saber os últimos desenvolvimentos na exploração espacial e na busca para desvendar os mistérios do universo.</p>
                                                 </div>
                                                 <div class="spacer-medium">
                                     
                                                 </div>
-                                                <!-- <h2 class="heading-style-h3">Other articles</h2>
-                                                <div class="spacer-small"></div>
-                                                <div class="hero_articles_list-wrapper w-dyn-list">
-                                                    <div role="list" class="hero_articles_list is-list w-dyn-items">
-                                                        <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                            <a href="/example-blog/view-from-orbit-witnessing-a-planetary-eclipse" class="hero_articles_item-link w-inline-block">
-                                                                <div class="hero_articles_thumbnail-wrapper">
-                                                                    <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse.webp 1920w" class="hero_articles_thumbnail"/></div>
-                                                                    <h2 class="heading-style-h4">View from Orbit: Witnessing a Planetary Eclipse</h2>
-                                                                </a>
-                                                            </div>
-                                                            <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                                <a href="/example-blog/in-the-halo-of-the-star" class="hero_articles_item-link w-inline-block">
-                                                                    <div class="hero_articles_thumbnail-wrapper">
-                                                                        <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo.webp 1920w" class="hero_articles_thumbnail"/></div>
-                                                                        <h2 class="heading-style-h4">In the Halo of the Star</h2>
-                                                                    </a>
-                                                                </div>
-                                                                <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                                    <a href="/example-blog/the-mystery-of-the-dying-sun" class="hero_articles_item-link w-inline-block">
-                                                                        <div class="hero_articles_thumbnail-wrapper">
-                                                                            <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat.webp 1920w" class="hero_articles_thumbnail"/></div>
-                                                                            <h2 class="heading-style-h4">The mystery of the dying Sun</h2>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div> -->
                                                         </div>
                                                     </div>
                                                 </header>
@@ -2217,14 +2388,14 @@
                                                                 <div class="article-hero_tags_list-wrapper w-dyn-list">
                                                                     <div role="list" class="article-hero_tags_list w-dyn-items">
                                                                         <div role="listitem" class="article-hero_tag w-dyn-item">
-                                                                            <div>Science</div>
+                                                                            <div>Ciência</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="spacer-xsmall"></div>
-                                                                <h1>In the Halo of the Star</h1>
+                                                                <h1>No Halo da Estrela</h1>
                                                                 <div class="spacer-small"></div>
-                                                                <p class="text-size-medium">Astronomers announce a groundbreaking discovery: a halo surrounding a distant star, shedding light on the complex interplay of celestial phenomena.</p>
+                                                                <p class="text-size-medium">Astrônomos anunciam uma descoberta inovadora: um halo ao redor de uma estrela distante, lançando luz sobre a complexa interação de fenômenos celestes.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2243,43 +2414,17 @@
                                                     <div class="padding-global padding-section-small">
                                                         <div class="container-small">
                                                             <div og-article="true" class="text-rich-text text-size-medium w-richtext">
-                                                                <p>In a groundbreaking revelation that promises to reshape our understanding of stellar dynamics, astronomers have identified a halo enveloping a distant star. This extraordinary discovery, made possible by advanced telescopic observations, provides unprecedented insights into the intricate mechanisms at play within stellar systems.</p>
-                                                                <p>Named &quot;Circinus-Alpha,&quot; the star at the center of this remarkable phenomenon has captured the attention of astronomers worldwide. Initial observations of its expansive halo have left scientists awe-inspired and eager to delve deeper into its mysteries.</p>
-                                                                <p>Dr. Marcus Chen, a leading astrophysicist involved in the discovery, describes the significance of this find. &quot;The presence of a halo around Circinus-Alpha challenges conventional models of stellar evolution. It offers a unique opportunity to study the dynamic interplay between stars and their surrounding environments.&quot;</p>
-                                                                <p>The origins of the halo remain shrouded in mystery, prompting speculation among researchers. Some propose that it could be the result of interactions with nearby celestial bodies, while others hypothesize more exotic explanations involving cosmic phenomena.</p>
-                                                                <p>Efforts to study the halo of Circinus-Alpha are already underway, utilizing state-of-the-art instruments and analytical techniques. Researchers hope to unravel its composition, structure, and underlying dynamics, shedding light on the processes shaping the evolution of stars and their surroundings.</p>
-                                                                <p>The discovery of the halo around Circinus-Alpha underscores the importance of continued exploration and discovery in the field of astronomy. With each new revelation, our understanding of the cosmos is enriched, fueling a sense of wonder and curiosity about the vastness of the universe.</p>
-                                                                <p>As scientists delve deeper into the mysteries of Circinus-Alpha and its halo, updates and insights will be shared. Stay informed by visiting Space News for the latest developments in space exploration and the quest to unlock the secrets of the cosmos.</p>
+                                                                <p>Em uma revelação inovadora que promete remodelar nossa compreensão da dinâmica estelar, astrônomos identificaram um halo envolvendo uma estrela distante. Esta descoberta extraordinária, possibilitada por observações telescópicas avançadas, fornece insights sem precedentes sobre os mecanismos intrincados em jogo dentro dos sistemas estelares.</p>
+                                                                <p>Chamada de Circinus-Alpha, a estrela no centro deste fenômeno notável capturou a atenção de astrônomos em todo o mundo. As observações iniciais de seu halo expansivo deixaram os cientistas inspirados e ansiosos para se aprofundar em seus mistérios.</p>
+                                                                <p>O Dr. Marcus Chen, um astrofísico líder envolvido na descoberta, descreve o significado desta descoberta. A presença de um halo ao redor de Circinus-Alpha desafia os modelos convencionais de evolução estelar. Ela oferece uma oportunidade única de estudar a interação dinâmica entre estrelas e seus ambientes circundantes.</p>
+                                                                <p>As origens do halo permanecem envoltas em mistério, provocando especulações entre pesquisadores. Alguns propõem que ele poderia ser o resultado de interações com corpos celestes próximos, enquanto outros levantam hipóteses de explicações mais exóticas envolvendo fenômenos cósmicos.</p>
+                                                                <p>Esforços para estudar o halo de Circinus-Alpha já estão em andamento, utilizando instrumentos de última geração e técnicas analíticas. Os pesquisadores esperam desvendar sua composição, estrutura e dinâmica subjacente, lançando luz sobre os processos que moldam a evolução das estrelas e seus arredores.</p>
+                                                                <p>A descoberta do halo ao redor de Circinus-Alpha ressalta a importância da exploração e descoberta contínuas no campo da astronomia. Com cada nova revelação, nossa compreensão do cosmos é enriquecida, alimentando um senso de admiração e curiosidade sobre a vastidão do universo.</p>
+                                                                <p>À medida que os cientistas se aprofundam nos mistérios de Circinus-Alpha e seu halo, atualizações e insights serão compartilhados. Mantenha-se informado visitando o Space News para os últimos desenvolvimentos na exploração espacial e a busca para desvendar os segredos do cosmos.</p>
                                                             </div>
                                                             <div class="spacer-medium">
                                 
                                                             </div>
-                                                            <!-- <h2 class="heading-style-h3">Other articles</h2>
-                                                            <div class="spacer-small"></div>
-                                                            <div class="hero_articles_list-wrapper w-dyn-list">
-                                                                <div role="list" class="hero_articles_list is-list w-dyn-items">
-                                                                    <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                                        <a href="/example-blog/view-from-orbit-witnessing-a-planetary-eclipse" class="hero_articles_item-link w-inline-block">
-                                                                            <div class="hero_articles_thumbnail-wrapper">
-                                                                                <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse.webp 1920w" class="hero_articles_thumbnail"/></div>
-                                                                                <h2 class="heading-style-h4">View from Orbit: Witnessing a Planetary Eclipse</h2>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                                            <a href="/example-blog/abandoned-ancient-satellite-found-in-gas-giant-orbit" class="hero_articles_item-link w-inline-block">
-                                                                                <div class="hero_articles_thumbnail-wrapper">
-                                                                                    <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant.jpg" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-500.jpg 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-800.jpg 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-1080.jpg 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-1600.jpg 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant.jpg 1920w" class="hero_articles_thumbnail"/></div>
-                                                                                    <h2 class="heading-style-h4">Abandoned ancient satellite found in gas giant orbit</h2>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                                                <a href="/example-blog/the-mystery-of-the-dying-sun" class="hero_articles_item-link w-inline-block">
-                                                                                    <div class="hero_articles_thumbnail-wrapper"><img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b63_heat.webp 1920w" class="hero_articles_thumbnail"/></div>
-                                                                                    <h2 class="heading-style-h4">The mystery of the dying Sun</h2>
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div> -->
                                                                     </div>
                                                                 </div>
                                                             </header>
@@ -2296,17 +2441,17 @@
                                                                 <div class="article-hero_tags_list-wrapper w-dyn-list">
                                                                     <div role="list" class="article-hero_tags_list w-dyn-items">
                                                                         <div role="listitem" class="article-hero_tag w-dyn-item">
-                                                                            <div>Science</div>
+                                                                            <div>Ciência</div>
                                                                         </div>
                                                                         <div role="listitem" class="article-hero_tag w-dyn-item">
-                                                                            <div>Exploration</div>
+                                                                            <div>Exploração</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="spacer-xsmall"></div>
-                                                                <h1>The mystery of the dying Sun</h1>
+                                                                <h1>O mistério do Sol moribundo</h1>
                                                                 <div class="spacer-small"></div>
-                                                                <p class="text-size-medium">Scientists embark on a quest to decipher the enigmatic signals emanating from our Sun, sparking intrigue and concern about its future.</p>
+                                                                <p class="text-size-medium">Cientistas embarcam em uma jornada para decifrar os sinais enigmáticos que emanam do nosso Sol, gerando intriga e preocupação sobre seu futuro.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2325,42 +2470,15 @@
                                     <div class="padding-global padding-section-small">
                                         <div class="container-small">
                                             <div og-article="true" class="text-rich-text text-size-medium w-richtext">
-                                                <p>In a quest to understand the fate of our solar system's central luminary, scientists are grappling with a puzzling phenomenon: the mysterious signals emanating from the Sun. Dubbed "The Mystery of the Dying Sun," this perplexing enigma has captured the attention of astronomers and astrophysicists worldwide, sparking both intrigue and concern about the future of our closest star.</p>
-                                                <p>Recent observations have revealed irregular fluctuations in solar activity, accompanied by unusual emissions and fluctuations in solar radiation. These anomalies, unprecedented in recent history, have prompted urgent inquiries into the underlying causes and potential consequences for Earth and the broader solar system.</p>
-                                                <p>Dr. Sofia Ramirez, a prominent solar physicist leading the investigation, underscores the significance of unraveling this mystery. "The fluctuations observed in the Sun's activity are unprecedented and demand our immediate attention. Understanding the root cause is essential for predicting and mitigating any potential impacts on Earth's climate and space weather."</p>
-                                                <p>Speculation abounds regarding the possible explanations for the Sun's erratic behavior. Some scientists point to natural cycles of solar activity, while others suggest more ominous scenarios involving internal disruptions or external influences from cosmic phenomena.</p>
-                                                <p>Efforts to decipher the mystery of the dying Sun are underway, with scientists deploying a range of observational and analytical tools to probe its inner workings. Advanced spacecraft and ground-based observatories are being mobilized to monitor solar activity with unprecedented precision, hoping to uncover clues that could shed light on the underlying causes.</p>
-                                                <p>The implications of the Sun's enigmatic behavior extend far beyond the realm of astrophysics, with potential ramifications for life on Earth and the future of space exploration. As scientists race to unlock the secrets of our Sun's evolution, the stakes have never been higher.</p>
-                                                <p>Stay informed by visiting Space News for the latest updates on the mystery of the dying Sun and other developments in solar and space science.</p>
+                                                <p>Em uma busca para entender o destino do luminar central do nosso sistema solar, os cientistas estão lidando com um fenômeno intrigante: os sinais misteriosos que emanam do Sol. Apelidado de "O Mistério do Sol Moribundo", esse enigma desconcertante capturou a atenção de astrônomos e astrofísicos em todo o mundo, despertando intriga e preocupação sobre o futuro da nossa estrela mais próxima.</p>
+                                                <p>Observações recentes revelaram flutuações irregulares na atividade solar, acompanhadas por emissões e flutuações incomuns na radiação solar. Essas anomalias, sem precedentes na história recente, levaram a investigações urgentes sobre as causas subjacentes e as consequências potenciais para a Terra e o sistema solar mais amplo.</p>
+                                                <p>A Dra. Sofia Ramirez, uma proeminente física solar que lidera a investigação, ressalta a importância de desvendar esse mistério. "As flutuações observadas na atividade do Sol não têm precedentes e exigem nossa atenção imediata. Entender a causa raiz é essencial para prever e mitigar quaisquer impactos potenciais no clima da Terra e no clima espacial."</p>
+                                                <p>A especulação abunda em relação às possíveis explicações para o comportamento errático do Sol. Alguns cientistas apontam para ciclos naturais de atividade solar, enquanto outros sugerem cenários mais ameaçadores envolvendo interrupções internas ou influências externas de fenômenos cósmicos.</p>
+                                                <p>Esforços para decifrar o mistério do Sol moribundo estão em andamento, com cientistas implantando uma série de ferramentas observacionais e analíticas para sondar seu funcionamento interno. Espaçonaves avançadas e observatórios terrestres estão sendo mobilizados para monitorar a atividade solar com precisão sem precedentes, na esperança de descobrir pistas que possam lançar luz sobre as causas subjacentes.</p>
+                                                <p>As implicações do comportamento enigmático do Sol se estendem muito além do reino da astrofísica, com potenciais ramificações para a vida na Terra e o futuro da exploração espacial. À medida que os cientistas correm para desvendar os segredos da evolução do nosso Sol, os riscos nunca foram tão altos.</p>
+                                                <p>Fique informado visitando o Space News para as últimas atualizações sobre o mistério do Sol moribundo e outros desenvolvimentos na ciência solar e espacial.</p>
                                             </div>
                                             <div class="spacer-medium"></div>
-                                            <!-- <h2 class="heading-style-h3">Other articles</h2>
-                                            <div class="spacer-small"></div>
-                                            <div class="hero_articles_list-wrapper w-dyn-list">
-                                                <div role="list" class="hero_articles_list is-list w-dyn-items">
-                                                    <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                        <a href="/example-blog/view-from-orbit-witnessing-a-planetary-eclipse" class="hero_articles_item-link w-inline-block">
-                                                            <div class="hero_articles_thumbnail-wrapper">
-                                                                <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse.webp 1920w" class="hero_articles_thumbnail"></div>
-                                                                <h2 class="heading-style-h4">View from Orbit: Witnessing a Planetary Eclipse</h2>
-                                                            </a>
-                                                        </div>
-                                                        <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                            <a href="/example-blog/abandoned-ancient-satellite-found-in-gas-giant-orbit" class="hero_articles_item-link w-inline-block">
-                                                                <div class="hero_articles_thumbnail-wrapper">
-                                                                    <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant.jpg" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-500.jpg 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-800.jpg 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-1080.jpg 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-1600.jpg 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant.jpg 1920w" class="hero_articles_thumbnail"></div>
-                                                                    <h2 class="heading-style-h4">Abandoned ancient satellite found in gas giant orbit</h2>
-                                                                </a>
-                                                            </div>
-                                                            <div role="listitem" class="hero_articles_item w-dyn-item">
-                                                                <a href="/example-blog/in-the-halo-of-the-star" class="hero_articles_item-link w-inline-block">
-                                                                    <div class="hero_articles_thumbnail-wrapper">
-                                                                        <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo.webp 1920w" class="hero_articles_thumbnail"></div>
-                                                                        <h2 class="heading-style-h4">In the Halo of the Star</h2>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </header>
@@ -2906,11 +3024,7 @@
                                             </script>
                                             <div class="w-layout-grid grid_video">
                                                 <a id="abrirPortfolio1" id="w-node-_0df5851e-dc1e-33e4-e0c3-678a799129c6-710aa1a0"  class="button_os w-inline-block">
-                                                    <div class="icon_24x24 w-embed">
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9823 2.00119C11.2035 2.01667 9.58242 2.07325 8.29316 2.16486C7.83218 2.19761 7.7456 2.20827 7.55872 2.25533C6.9736 2.40265 6.47354 2.7624 6.14605 3.2716C5.98104 3.52817 5.86367 3.83373 5.81262 4.13962C5.78837 4.28496 5.78128 4.40878 5.75496 5.14663C5.74257 5.49368 5.73065 5.78973 5.72845 5.80452L5.72446 5.8314L5.60077 5.83737C5.21644 5.85594 4.39841 5.91101 4.22984 5.92967C3.85532 5.97114 3.49774 6.10087 3.18241 6.30972C2.61414 6.68607 2.23832 7.29304 2.15245 7.97316C2.13107 8.14256 2.06709 9.73902 2.03971 10.7867C1.98022 13.0628 1.98762 15.394 2.0616 17.6845C2.09739 18.7925 2.13809 19.6619 2.1617 19.8226C2.20326 20.1057 2.30766 20.4063 2.44565 20.6403C2.56495 20.8427 2.66675 20.9728 2.83816 21.1424C3.19848 21.4987 3.64077 21.7184 4.15137 21.7946C4.37364 21.8278 5.50576 21.8973 6.39839 21.9326C7.6477 21.9819 8.66223 22 10.1792 22C11.6962 22 12.7011 21.9821 13.9601 21.9327C14.8592 21.8974 15.9793 21.8285 16.2097 21.7942C16.9847 21.6789 17.6381 21.2069 17.9799 20.5154C18.1135 20.2452 18.1858 19.9942 18.2143 19.7018C18.223 19.6125 18.2475 19.0866 18.2665 18.5792C18.2714 18.4508 18.2776 18.3066 18.2805 18.2587L18.2856 18.1716L18.4826 18.1613C19.1115 18.1282 19.7556 18.0801 19.9003 18.0556C20.2471 17.9966 20.5347 17.8828 20.8264 17.6887C21.3135 17.3648 21.6566 16.8791 21.8032 16.3058C21.8501 16.1221 21.8607 16.0199 21.8822 15.5452C21.9302 14.4805 21.961 13.535 21.9888 12.2778C22.0038 11.5976 22.0037 8.66992 21.9887 7.99045C21.9526 6.35677 21.885 4.50963 21.8515 4.24334C21.796 3.80208 21.6163 3.38346 21.3319 3.03321C21.2599 2.94457 21.0769 2.76395 20.9872 2.69305C20.7717 2.52262 20.5125 2.38304 20.2571 2.29984C20.0603 2.23571 19.8878 2.20512 19.5922 2.18199C18.5226 2.09828 17.1386 2.03998 15.5898 2.01338C15.0742 2.00453 13.464 1.997 12.9823 2.00119ZM12.2956 3.83777C10.7513 3.86061 9.17101 3.92543 8.19382 4.00601C8.01464 4.02078 7.93989 4.03998 7.85757 4.09235C7.72561 4.17629 7.6363 4.32078 7.62266 4.47241C7.61852 4.51843 7.56874 5.75823 7.5709 5.76175C7.57136 5.76252 7.70448 5.75979 7.86669 5.75567C9.25612 5.7204 11.3485 5.72418 12.8649 5.76468C13.884 5.7919 14.7895 5.8326 15.568 5.88618C16.1512 5.92632 16.2527 5.93813 16.4546 5.98937C16.988 6.12476 17.4401 6.42826 17.7698 6.87233C18.023 7.21333 18.1872 7.65102 18.2184 8.06824C18.2368 8.31471 18.296 9.86438 18.3187 10.696C18.3671 12.4652 18.3759 14.7237 18.34 16.1148L18.3342 16.3387L18.4417 16.3327C19.0318 16.3001 19.5484 16.2617 19.6292 16.2446C19.8154 16.205 19.9675 16.0577 20.0136 15.8725C20.0273 15.8174 20.0339 15.729 20.0481 15.4069C20.2095 11.7551 20.2095 8.50259 20.0482 4.8657C20.0341 4.54875 20.0275 4.45936 20.0139 4.40522C19.9688 4.22468 19.8358 4.08177 19.6669 4.03244C19.6175 4.01802 19.4654 4.00425 19.0403 3.9757C17.969 3.90376 16.7579 3.85925 15.2682 3.83705C14.628 3.82752 12.9618 3.82791 12.2956 3.83777ZM8.47134 7.57191C7.53031 7.58776 6.48701 7.62196 5.7161 7.66224C5.11429 7.69369 4.46038 7.74 4.37551 7.7572C4.27761 7.77703 4.20844 7.81556 4.12896 7.89452C4.0535 7.96949 4.00654 8.05001 3.98732 8.1374C3.96254 8.25007 3.8866 10.3558 3.85904 11.6943C3.83851 12.6916 3.83851 15.0425 3.85904 16.0434C3.8889 17.4991 3.96282 19.5008 3.99066 19.6078C4.03438 19.7757 4.17711 19.9225 4.34283 19.97C4.38613 19.9825 4.64742 20.0093 4.72743 20.0096L4.76002 20.0097V19.7558C4.76002 19.3464 4.7977 19.0767 4.90025 18.752C5.21449 17.7572 6.03195 16.939 7.20941 16.4407C8.22941 16.0091 9.53957 15.8233 10.8702 15.9214C12.81 16.0644 14.3289 16.8054 15.0955 17.9827C15.3266 18.3377 15.4871 18.7406 15.5552 19.1367C15.5867 19.32 15.5979 19.4589 15.6041 19.7396L15.6099 20.0097L15.6368 20.0095C15.6964 20.0091 15.9619 19.9844 16.0009 19.9756C16.0828 19.9572 16.155 19.9148 16.2296 19.8414C16.3281 19.7445 16.3733 19.6507 16.3847 19.5195C16.4018 19.3233 16.4621 17.709 16.4848 16.8374C16.5344 14.9402 16.5344 12.7877 16.4848 10.8905C16.4623 10.0296 16.4018 8.41338 16.3847 8.21706C16.3717 8.06742 16.3 7.93766 16.1794 7.84513C16.077 7.76664 16.0154 7.75196 15.6854 7.72736C14.6382 7.64929 13.3456 7.59709 11.8176 7.57116C11.2516 7.56155 9.05698 7.56204 8.47134 7.57191ZM10.0749 8.92474C9.79541 8.94559 9.61652 8.97236 9.40695 9.02469C8.33109 9.29331 7.45487 10.0691 7.05393 11.1079C6.80658 11.7488 6.76493 12.4811 6.93762 13.1531C7.09023 13.747 7.38911 14.2665 7.83195 14.7075C8.11025 14.9846 8.39505 15.1886 8.73643 15.3552C9.3215 15.6407 9.95894 15.7519 10.6161 15.6831C11.5521 15.585 12.4258 15.0835 12.9888 14.3212C13.2482 13.9698 13.4572 13.525 13.5563 13.1133C13.6212 12.8434 13.6467 12.6175 13.6467 12.3124C13.6467 12.0716 13.6371 11.9462 13.6031 11.744C13.4656 10.926 13.0092 10.1604 12.3565 9.65242C11.8427 9.25262 11.2447 9.00927 10.6095 8.94148C10.4928 8.92903 10.158 8.91855 10.0749 8.92474ZM10.088 10.758C9.6021 10.8069 9.1572 11.0829 8.90572 11.4915C8.78688 11.6846 8.71398 11.8892 8.68467 12.1118C8.61539 12.6382 8.82198 13.1658 9.231 13.5072C9.43343 13.6762 9.68416 13.7952 9.94891 13.8479C10.0353 13.8652 10.0754 13.8679 10.2444 13.868C10.4148 13.8682 10.4528 13.8656 10.5393 13.8482C11.1997 13.7154 11.6986 13.1953 11.7956 12.5386C11.8134 12.4179 11.8135 12.2075 11.7957 12.0861C11.7204 11.5714 11.3851 11.1207 10.9137 10.9007C10.6926 10.7976 10.4806 10.7513 10.2401 10.7537C10.1732 10.7544 10.1047 10.7563 10.088 10.758ZM9.73596 17.7374C8.26216 17.8238 7.11806 18.3466 6.73379 19.1091C6.68134 19.2132 6.64593 19.3142 6.61963 19.4349C6.60303 19.511 6.60025 19.5565 6.59638 19.8161L6.592 20.1108L6.75594 20.1166C8.92991 20.1934 11.4284 20.1934 13.6024 20.1166L13.7662 20.1109L13.7621 19.8075C13.7586 19.5403 13.7559 19.4946 13.74 19.4246C13.6999 19.249 13.636 19.1018 13.5344 18.9509C13.0744 18.2675 11.9833 17.815 10.6063 17.7366C10.4277 17.7264 9.91511 17.7269 9.73596 17.7374Z" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
+                                                    <i class="fa-solid fa-school-flag"></i>
                                                     <div class="button_txt">Ver Portfolio</div>
                                                 </a>
                                                 <!-- <a id="w-node-_8a202c38-4f6e-6934-5030-49e88dbb2002-710aa1a0"  class="button_os ghost w-inline-block">
@@ -2956,36 +3070,36 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="w-layout-grid grid_news">
+                                            <div id="noticiaClicavel1" class="w-layout-grid grid_news">
                                                 <div id="w-node-_8f168a69-10c2-7131-bc9e-53b5c0ab420d-710aa1a0" class="news_cover-wrapper">
-                                                    <img src="https://cdn.prod.website-files.com/64e45e949983886b710aa1a2/64e5f2bc87242ee48f69ab64_musk.jpg" loading="eager" alt="" class="news_cover"/>
+                                                    <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/6671e07c9f9fd547e201cf75_eclipse.webp 1920w" class="hero_articles_thumbnail"/>
                                                 </div>
                                                 <div id="w-node-_8f168a69-10c2-7131-bc9e-53b5c0ab420f-710aa1a0" class="news_content-wrapper">
-                                                    <div class="news_source">Reliable source via the gorafi</div>
-                                                    <div class="news_title">Elon Musk announces the creation of an electronic device that can toast bread</div>
+                                                    <div class="news_source">Fonte confiável da choquei!</div>
+                                                    <div class="news_title">Visão da órbita: testemunhando um eclipse planetário</div>
                                                 </div>
                                             </div>
-                                            <div class="w-layout-grid grid_news">
+                                            <div id="noticiaClicavel2" class="w-layout-grid grid_news">
                                                 <div id="w-node-_7004896b-61e0-66d8-fe79-f3a173129d2d-710aa1a0" class="news_cover-wrapper">
-                                                    <img src="https://cdn.prod.website-files.com/64e45e949983886b710aa1a2/64e5f2bc001ab9aad57bd2fa_charles.jpg" loading="eager" alt="" class="news_cover"/>
+                                                    <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant.jpg" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-500.jpg 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-800.jpg 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-1080.jpg 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant-p-1600.jpg 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b3a_giant.jpg 1920w" class="hero_articles_thumbnail"/>
                                                 </div>
                                                 <div id="w-node-f760a6a6-c3d2-012e-7a27-8424c9821a63-710aa1a0" class="news_content-wrapper">
-                                                    <div class="news_source">Reliable source via the gorafi</div>
-                                                    <div class="news_title">To maintain his popularity, Charles III changed his regnal name to Elizabeth III</div>
+                                                    <div class="news_source">Fonte confiável da choquei!</div>
+                                                    <div class="news_title">Satélite antigo abandonado é encontrado</div>
                                                 </div>
                                             </div>
-                                            <div class="w-layout-grid grid_news">
+                                            <div id="noticiaClicavel3" class="w-layout-grid grid_news">
                                                 <div id="w-node-_68708af0-2df1-d31d-8485-e5b7b04b8021-710aa1a0" class="news_cover-wrapper">
-                                                    <img src="https://cdn.prod.website-files.com/64e45e949983886b710aa1a2/64e5f2bc2820e6e33ee93252_man.jpg" loading="eager" alt="" class="news_cover"/>
+                                                    <img src="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo.webp" loading="lazy" alt="" sizes="190px" srcset="https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-500.webp 500w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-800.webp 800w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-1080.webp 1080w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo-p-1600.webp 1600w, https://cdn.prod.website-files.com/66700a4e83d78671641d4b35/66700a4e83d78671641d4b62_halo.webp 1920w" class="hero_articles_thumbnail"/>
                                                 </div>
                                                 <div id="w-node-_68708af0-2df1-d31d-8485-e5b7b04b8023-710aa1a0" class="news_content-wrapper">
-                                                    <div class="news_source">Fonte confiável da choquei</div>
-                                                    <div class="news_title">Daltonismo - Ele conseguiu ver cores pela primeira vez e pode finalmente ser racista</div>
+                                                    <div class="news_source">Fonte confiável da choquei!</div>
+                                                    <div class="news_title">No Halo da Estrela</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <a  class="button_txt-small w-inline-block">
-                                            <div id="verNoticiasMundo" class="text-size-tiny">Ver Tudo</div>
+                                        <a id="verNoticiasMundo" class="button_txt-small w-inline-block">
+                                            <div class="text-size-tiny">Ver Tudo</div>
                                             <div class="icon_16x16 w-embed">
                                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M9.99564 7.99954C10.0064 8.09314 9.99538 8.18797 9.96334 8.27658C9.93129 8.36519 9.87914 8.44516 9.81097 8.5102L7.09364 11.1495C6.97246 11.2672 6.81021 11.333 6.6413 11.333C6.4724 11.333 6.31015 11.2672 6.18897 11.1495C6.12947 11.0929 6.0821 11.0247 6.04973 10.9492C6.01736 10.8737 6.00067 10.7924 6.00067 10.7102C6.00067 10.628 6.01736 10.5467 6.04973 10.4712C6.0821 10.3957 6.12947 10.3275 6.18897 10.2709L8.52297 7.99954L6.1883 5.73287C6.12877 5.67581 6.0814 5.6073 6.04904 5.53145C6.01668 5.45561 6 5.374 6 5.29154C6 5.20908 6.01668 5.12747 6.04904 5.05162C6.0814 4.97578 6.12877 4.90727 6.1883 4.8502C6.30948 4.73255 6.47174 4.66673 6.64064 4.66673C6.80954 4.66673 6.97179 4.73255 7.09297 4.8502L9.81097 7.48887C9.87058 7.54645 9.91801 7.61542 9.95042 7.6917C9.98283 7.76798 9.99957 7.84999 9.99964 7.93287C9.99955 7.95515 9.99822 7.97741 9.99564 7.99954Z" fill="currentColor"/>
@@ -3005,8 +3119,8 @@
                                             <div class="text-size-small text-weight-semibold">Para Maratonar</div>
                                         </div>
                                         <div class="container_h">
-                                            <a class="button_txt-small w-inline-block">
-                                                <div id="verNetflix" class="text-size-tiny">Ver Tudo</div>
+                                            <a id="verNetflix" class="button_txt-small w-inline-block">
+                                                <div class="text-size-tiny">Ver Tudo</div>
                                                 <div class="icon_16x16 w-embed">
                                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M9.99564 7.99954C10.0064 8.09314 9.99538 8.18797 9.96334 8.27658C9.93129 8.36519 9.87914 8.44516 9.81097 8.5102L7.09364 11.1495C6.97246 11.2672 6.81021 11.333 6.6413 11.333C6.4724 11.333 6.31015 11.2672 6.18897 11.1495C6.12947 11.0929 6.0821 11.0247 6.04973 10.9492C6.01736 10.8737 6.00067 10.7924 6.00067 10.7102C6.00067 10.628 6.01736 10.5467 6.04973 10.4712C6.0821 10.3957 6.12947 10.3275 6.18897 10.2709L8.52297 7.99954L6.1883 5.73287C6.12877 5.67581 6.0814 5.6073 6.04904 5.53145C6.01668 5.45561 6 5.374 6 5.29154C6 5.20908 6.01668 5.12747 6.04904 5.05162C6.0814 4.97578 6.12877 4.90727 6.1883 4.8502C6.30948 4.73255 6.47174 4.66673 6.64064 4.66673C6.80954 4.66673 6.97179 4.73255 7.09297 4.8502L9.81097 7.48887C9.87058 7.54645 9.91801 7.61542 9.95042 7.6917C9.98283 7.76798 9.99957 7.84999 9.99964 7.93287C9.99955 7.95515 9.99822 7.97741 9.99564 7.99954Z" fill="currentColor"/>
@@ -3118,7 +3232,7 @@
                                             </div>
                                             <div class="text-size-small text-weight-semibold">Gameplay Insana</div>
                                         </div>
-                                        <div class="container_h">
+                                        <div id="verTodosJogosBtn" class="container_h">
                                             <a  class="button_txt-small w-inline-block">
                                                 <div class="text-size-tiny">Ver Tudo</div>
                                                 <div class="icon_16x16 w-embed">
@@ -3220,61 +3334,7 @@
                 </div>
             </section>
 
-            <!-- <div style="display:none" class="modal">
-                <div style="-webkit-transform:translate3d(0, -100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-45deg) skew(0, 0);-moz-transform:translate3d(0, -100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-45deg) skew(0, 0);-ms-transform:translate3d(0, -100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-45deg) skew(0, 0);transform:translate3d(0, -100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-45deg) skew(0, 0)" class="modal_content-wrapper">
-                    <div class="modal_content">
-                        <div class="text-size-regular text-weight-semibold">Welcome</div>
-                            <div class="padding-small"></div>
-                            <div class="text-size-small text-color-black50">This site has been created on an experimental basis. If you liked it, please leave me a comment :)</div>
-                            <div class="padding-small"></div>
-                            <div class="form_contact w-form">
-                                <div>                              
-                                    <label for="name" class="field-label">Your Fullname</label>
-                                    <div class="text-field_wrapper">
-                                        <input class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="" type="text" id="name" required=""/>
-                                    </div>
-                                    <div class="padding-small"></div>
-                                    <label for="email" class="field-label">Your email</label>
-                                    <div class="text-field_wrapper">
-                                        <input class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="" type="email" id="email" required=""/>
-                                    </div>
-                                    <div class="padding-small"></div>
-                                    <label for="email" class="field-label">Your comment</label>
-                                    <div class="text-field_wrapper">
-                                        <textarea id="Comment" name="Comment" maxlength="5000" data-name="Comment" placeholder="" required="" class="text-aera w-input"></textarea>
-                                    </div>
-                                    <div class="padding-normal"></div>
-                                    <input type="submit" data-wait="Please wait..." class="button_form w-button" value="Send your message"/>
-                                </div>
 
-
-                                <div class="success-message w-form-done">
-                                    <div class="text-size-regular">
-                                        Thank you for enjoying this adventure.<br/>We look forward to hearing from you.
-                                    </div>
-                                </div>
-                                <div class="error-message w-form-fail">
-                                    <div>Ooops! I smell a rat</div>
-                                </div>
-                            </div>
-                            <div class="container_social">
-                                <div class="text-size-tiny">Follow Me</div>
-                                <a Title="LinkedIn" href="https://www.linkedin.com/in/jbergamaschi/" target="_blank" class="button_social w-inline-block">
-                                    <div></div>
-                                </a>
-                                <a Title="Dribbble" href="https://jbergamaschi.dribbble.com/" target="_blank" class="button_social w-inline-block">
-                                    <div></div>
-                                </a>
-                                <a Title="Behance" href="https://www.behance.net/jbergamaschi" target="_blank" class="button_social w-inline-block">
-                                    <div></div>
-                                </a>
-                                <a Title="BGSPROD" href="https://www.bgsprod.com/" target="_blank" class="button_social regular w-inline-block">
-                                    <div></div>
-                                </a>
-                            </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
     
@@ -3868,7 +3928,7 @@
 
 </body>
 
-<div id="portfolioMesmo" style="display: block;">
+<div id="portfolioMesmo" style="display: none;">
     <i id="xPortfolio" class="fa-solid fa-xmark"></i>
     <div id="primeiraUnidade" class="body">
             <!-- <div data-ix="pre-loader" class="loader">
@@ -18018,6 +18078,155 @@
 
     </div>
 
+    
+
+    <div id="verTodosJogos">
+        <img id="imagem" src="teste/games/ps/assets/img/start.png" alt="Start">
+      <div id="mensagem"> Press PS button or space </div>
+              <div id="restoDaPagina" class="hide">
+                <!-- partial:index.partial.html -->
+                  <header id="header22">
+                        <!-- <div id="psp"></div> -->
+                      <a> 
+                        <div id="plus" tabindex="0"></div> </a>
+                        <div id="info"></div>
+                        <div id="textInfo">God of War Ragnarok now available!</div>
+                        <div id="friends">+5</div>
+                        <div id="user"></div>
+                        <div id="userName">Player</div>
+                        <div id="trophies">‎ ‎ ‎ ‎ ‎ ‎  +6</div>
+                        <div id="clock" onload="currentTime()"></div>
+                    </header>
+          
+                    <div id="games">
+                        <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame ps" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">Playstation Store</span>
+                            <div id="store">
+                    <div id="god" class="storeGame"></div>
+                    <div id="raider" class="storeGame"></div>
+                    <div id="codi" class="storeGame"></div>
+                    <div id="mafia" class="storeGame"></div>
+                    <div id="destiny" class="storeGame"></div>
+                    <div id="bt1" class="storeGame"></div>
+                    <div id="lg" class="storeGame"></div>
+                    <div id="per" class="storeGame"></div>
+                            </div>
+                        </div>
+                        </a>
+                        <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame new" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">What's New</span>
+                        </div>
+                        </a>
+                        <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame last" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">The Last Of Us Part II</span>
+                        </div>
+                        </a>
+                        <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame detroit" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">Detroit: Become Human</span>
+                        </div>
+                        </a>
+                        <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame spiderman" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">Spider-Man</span>
+                        </div>
+                        </a>
+                            <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame battle" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">Battlefield 1</span>
+                        </div>
+                            </a>
+                            <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame death" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">Death Stranding</span>
+                        </div>
+                            </a>
+                            <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame red" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">Red Dead Redemption 2</span>
+                        </div>
+                            </a>
+                        <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame elden" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">Elden Ring</span>
+                        </div>
+                        </a>
+                        <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame cod" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">Call Of Duty: Black Ops III</span>
+                        </div>
+                        </a>
+                        <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame jedi" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">Jedi: Fallen Order</span>
+                        </div>
+                        </a>
+                            <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame fifa" tabindex="0"></div>
+                            <div class="gameText">Start</div>
+                            <span class="gameTitle">Fifa 23</span>
+                        </div>
+                            </a>
+                            <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame youtube" tabindex="0"></div>
+                            <div class="gameText">Open</div>
+                            <span class="gameTitle">Youtube</span>
+                        </div>
+                             </a>
+                            <a>
+                        <div class="squareGame animated bounceInLeft">
+                            <div class="imgGame settings" tabindex="0"></div>
+                            <div class="gameText">Open</div>
+                            <span class="gameTitle">Settings</span>
+                        </div>
+                            </a>
+                            <a>
+                        <div class="squareGame animated bounceInLeft" id="sairJogos">
+                            <div class="imgGame off" tabindex="0"></div>
+                            <div class="gameText">Shutdown</div>
+                            <span class="gameTitle">Turn Off</span>
+                        </div>
+                            </a>
+                    </div>
+    
+                    <div class='box'>
+                      <div class='wave -one'></div>
+                      <div class='wave -two'></div>
+                      <div class='wave -three'></div>
+                    </div>
+          </div>
+    
+        <!--========== JAVASCRIPT ===========-->
+        <script  src="teste/games/ps/assets/js/script.js"></script>
+        </div>
+
     <script>
 
         const mainAreaLeft = document.getElementById("mainAreaLeft")
@@ -18032,6 +18241,15 @@
         const sairNetflix = document.getElementById("sairNetflix")
 
         const appNetflix = document.getElementById("appNetflix")
+
+        const verJogos = document.getElementById("verTodosJogosBtn")
+        const sairJogos = document.getElementById("sairJogos")
+
+        const appJogos = document.getElementById("verTodosJogos")
+
+        const paginaPrincipal = document.getElementById("paginaPrincipal")
+
+
 
         const spiderManCard = document.getElementById("spiderManCard")
         const spiderMan = document.getElementById("spiderMan")
@@ -18196,6 +18414,58 @@ const netflixIcone = document.getElementById("netflixIcone")
                 }, interval);
             }
             fadeOut1(appNetflix, 500)
+            
+            
+        })
+
+
+        verJogos.addEventListener("click", ()=> {
+            function fadeOut1(element, duration) {
+                let opacity = 1;
+                const interval = 50; // Intervalo de tempo para a animação (em ms)
+                const step = interval / duration; // Quanto diminuir a opacidade a cada intervalo
+
+                const fadeEffect = setInterval(() => {
+                    opacity -= step;
+                    if (opacity <= 0) {
+                    opacity = 0;
+                    element.style.opacity = opacity;
+                    element.style.display = 'none'; // Esconde o elemento
+                    clearInterval(fadeEffect); // Para a animação
+                    fadeIn(appJogos, 500)
+                    paginaPrincipal.style.backgroundColor = "#0e6cc4"
+                    } else {
+                    element.style.opacity = opacity;
+                    }
+                }, interval);
+            }
+            fadeOut1(mainWrapper, 500)
+            
+            
+        })
+
+        sairJogos.addEventListener("click", ()=> {
+            fadeOut(otherRight, 500)
+            function fadeOut1(element, duration) {
+                let opacity = 1;
+                const interval = 50; // Intervalo de tempo para a animação (em ms)
+                const step = interval / duration; // Quanto diminuir a opacidade a cada intervalo
+
+                const fadeEffect = setInterval(() => {
+                    opacity -= step;
+                    if (opacity <= 0) {
+                    opacity = 0;
+                    element.style.opacity = opacity;
+                    element.style.display = 'none'; // Esconde o elemento
+                    clearInterval(fadeEffect); // Para a animação
+                    fadeIn(mainWrapper, 500)
+                    paginaPrincipal.style.backgroundColor = "#fff"
+                    } else {
+                    element.style.opacity = opacity;
+                    }
+                }, interval);
+            }
+            fadeOut1(appJogos, 500)
             
             
         })
@@ -18581,6 +18851,13 @@ const netflixIcone = document.getElementById("netflixIcone")
                 }, interval);
             }
             fadeOut1(portfolioMesmo, 500)
+
+            let portfolioIcone = document.getElementById("portfolioIcone")
+            let menuIcone = document.getElementById("menuIcone")
+
+            if (portfolioIcone.classList.contains("current")) {
+                portfolioIcone.classList.remove("current")
+            }
         })
 
 
@@ -18624,6 +18901,13 @@ const netflixIcone = document.getElementById("netflixIcone")
             videoDbd.pause()
             videoDbd.currentTime = 0; // Retorna o vídeo para o início
         }
+
+
+        const gtaBtn2 = document.getElementById("gtaBtn2")
+        const forzaBtn2 = document.getElementById("forzaBtn2")
+        const valhallaBtn2 = document.getElementById("valhallaBtn2")
+        const mineBtn2 = document.getElementById("mineBtn2")
+        const dbdBtn2 = document.getElementById("dbdBtn2")
 
 
 
@@ -18759,10 +19043,16 @@ listenerEntrar(dbdCard, dbd, videoDbd)
 
 listenerSair(sairDbd, dbd, videoDbd)
 
+// listenerEntrar(gtaBtn2, gta, videoGta)
+// listenerEntrar(forzaBtn2, forza, videoForza)
+// listenerEntrar(valhallaBtn2, valhalla, videoValhalla)
+// listenerEntrar(mineBtn2, mine, videoMine)
+// listenerEntrar(dbdBtn2, dbd, videoDbd)
 
-listenerEntrar1(abrirPortfolio1, portfolioMesmo, videoDbd)
 
-listenerSair1(sairPortfolioMesmo, portfolioMesmo, videoDbd)
+listenerEntrar1(abrirPortfolio1, portfolioMesmo)
+
+listenerSair1(sairPortfolioMesmo, portfolioMesmo)
 
         // gtaCard.addEventListener("click", ()=> {
         //     function fadeOut1(element, duration) {
@@ -18985,11 +19275,15 @@ const buttons = document.querySelectorAll('.nav_widget-button');
 // Adiciona o evento de clique a cada botão
 buttons.forEach(button => {
   button.addEventListener('click', function() {
-    // Remove a classe 'current' de todos os botões
-    buttons.forEach(btn => btn.classList.remove('current'));
-    
-    // Adiciona a classe 'current' ao botão clicado
-    this.classList.add('current');
+
+    if (button.id != "portfolioIcone") {
+        // Remove a classe 'current' de todos os botões
+        buttons.forEach(btn => btn.classList.remove('current'));
+        
+        // Adiciona a classe 'current' ao botão clicado
+        this.classList.add('current');
+    }
+
   });
 });
 
@@ -19213,6 +19507,33 @@ moreGamesBtn.addEventListener('click', activateSpecificButton);
     let configFriends = document.getElementById("configFriends")
     let configNews = document.getElementById("configNews")
     let configTv = document.getElementById("configTv")
+
+    let portfolioIcone = document.getElementById("portfolioIcone")
+
+
+    portfolioIcone.addEventListener("click", ()=> {
+        function fadeOut1(element, duration) {
+                let opacity = 1;
+                const interval = 50; // Intervalo de tempo para a animação (em ms)
+                const step = interval / duration; // Quanto diminuir a opacidade a cada intervalo
+
+                const fadeEffect = setInterval(() => {
+                    opacity -= step;
+                    if (opacity <= 0) {
+                    opacity = 0;
+                    element.style.opacity = opacity;
+                    element.style.display = 'none'; // Esconde o elemento
+                    clearInterval(fadeEffect); // Para a animação
+                    pageWrapper.style.padding = 0
+                    fadeIn(portfolioMesmo, 500)
+                    } else {
+                    element.style.opacity = opacity;
+                    }
+                }, interval);
+            }
+            fadeOut1(mainWrapper, 500)
+
+    })
 
 
     configuracoesIcone.addEventListener("click", ()=> {
@@ -20039,6 +20360,56 @@ moreGamesBtn.addEventListener('click', activateSpecificButton);
         aviso.style.display = "none"
     })
     
+    let noticiaClicavel1 = document.getElementById("noticiaClicavel1")
+    let noticiaClicavel2 = document.getElementById("noticiaClicavel2")
+    let noticiaClicavel3 = document.getElementById("noticiaClicavel3")
+
+    let noticia1 = document.getElementById("noticia1")
+    let noticia2 = document.getElementById("noticia2")
+    let noticia3 = document.getElementById("noticia3")
+    let noticia4 = document.getElementById("noticia4")
+
+    function abrirNoticiaClicavel(noticiaClicavel, noticia) {
+        noticiaClicavel.addEventListener("click", ()=> {
+            noticia1.style.display = "none"
+            noticia2.style.display = "none"
+            noticia3.style.display = "none"
+            noticia4.style.display = "none"
+
+            noticia1.style.opacity = 0
+            noticia2.style.opacity = 0
+            noticia3.style.opacity = 0
+            noticia4.style.opacity = 0
+            let noticiasPrincipal = document.getElementById("noticiasPrincipal")
+            fadeOut(noticiasPrincipal, 500)
+            function fadeOut1(element, duration) {
+                let opacity = 1;
+                const interval = 50; // Intervalo de tempo para a animação (em ms)
+                const step = interval / duration; // Quanto diminuir a opacidade a cada intervalo
+
+                const fadeEffect = setInterval(() => {
+                    opacity -= step;
+                    if (opacity <= 0) {
+                    opacity = 0;
+                    element.style.opacity = opacity;
+                    element.style.display = 'none'; // Esconde o elemento
+                    clearInterval(fadeEffect); // Para a animação
+                    fadeIn(appWorldNews, 500)
+                    fadeIn(otherRight, 500)
+                    fadeIn(noticia, 500)
+                    } else {
+                    element.style.opacity = opacity;
+                    }
+                }, interval);
+            }
+            fadeOut1(mainAreaRight, 500)
+        })
+
+    }
+
+    abrirNoticiaClicavel(noticiaClicavel1, noticia1)
+    abrirNoticiaClicavel(noticiaClicavel2, noticia2)
+    abrirNoticiaClicavel(noticiaClicavel3, noticia3)
     
             </script>
 
@@ -20239,13 +20610,31 @@ if (noticia) {
     let modalInfo1 = document.getElementById("modalInfo1")
     let modalInfo1Close = document.getElementById("modalInfo1Close")
 
-    info1.addEventListener("click", ()=> {
-        fadeIn(modalInfo1, 500)
-    })
+    // info1.addEventListener("click", ()=> {
+    //     fadeIn(modalInfo1, 500)
+    // })
 
-    modalInfo1Close.addEventListener("click", ()=> {
-        fadeOut(modalInfo1, 500)
-    })
+    // modalInfo1Close.addEventListener("click", ()=> {
+    //     fadeOut(modalInfo1, 500)
+    // })
+
+    let info2 = document.getElementById("info2")
+    let modalInfoClima = document.getElementById("modalInfoClima")
+    let modalInfoClimaClose = document.getElementById("modalInfoClimaClose")
+
+    function modalAbrirFechar(botao, modal, botaoFechar) {
+        botao.addEventListener("click", ()=> {
+            fadeIn(modal, 500)
+        })
+
+        botaoFechar.addEventListener("click", ()=> {
+            fadeOut(modal, 500)
+        })
+    }
+
+    modalAbrirFechar(info1, modalInfo1, modalInfo1Close)
+    modalAbrirFechar(info2, modalInfoClima, modalInfoClimaClose)
+
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" ></script>

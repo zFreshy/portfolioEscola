@@ -2794,7 +2794,7 @@ html {
   }
   
   .settings-form {
-    padding-bottom: 200px;
+    padding-bottom: 80px;
   }
   
   .toast-content {
@@ -2979,4 +2979,9 @@ html {
 input[type="checkbox"]:disabled ~ .checkbox-option {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+.save-button:hover {
+  opacity: 1;
+  background-color: #25e05a;
 }

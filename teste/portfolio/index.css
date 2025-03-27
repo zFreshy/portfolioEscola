@@ -3160,7 +3160,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../../imgAtividades/outro/1-ma.jpg");
+    background-image: url("../../imgAtividades/outro/1-ma.jpg") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;

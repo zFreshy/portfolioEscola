@@ -2180,7 +2180,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cd533f530ba8_Monstera_LOGO_1920x1280.jpg");
+    background-image: url("../../imgAtividades/classeCachorro1.png");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2194,7 +2194,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdbc5d530b3d_DixieSB-Rok-Bracko-01.jpg");
+    background-image: url("../../imgAtividades/outro/db.png");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2208,7 +2208,35 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cd533f530ba8_Monstera_LOGO_1920x1280.jpg");
+    background-image: url("../../imgAtividades/classeCachorro1.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.img-07 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../imgAtividades/classeCachorro1.png") !important;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+#imagemOb2Ds1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../imgAtividades/classeCachorro1.png");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2230,7 +2258,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdfb79530b17_Taiji-Voda_Mockup_1920x1280.jpg");
+    background-image: url("../../imgAtividades/outro/brexit.jpg") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2244,7 +2272,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdfb79530b17_Taiji-Voda_Mockup_1920x1280.jpg");
+    background-image: url("../../imgAtividades/outro/brexit.jpg");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2274,7 +2302,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdf87c530b97_TalkingTom_Group_1920px.jpg");
+    background-image: url("../../imgAtividades/outro/graficos.jpg") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2288,7 +2316,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdf87c530b97_TalkingTom_Group_1920px.jpg");
+    background-image: url("../../imgAtividades/outro/graficos.jpg");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3083,7 +3111,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdf38a530b3e_Ecocell-Aurora-Rok-Bracko-01.jpg");
+    background-image: url("../../imgAtividades/outro/ultimaCarta.jpg") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3097,7 +3125,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdf38a530b3e_Ecocell-Aurora-Rok-Bracko-01.jpg");
+    background-image: url("../../imgAtividades/outro/ultimaCarta.jpg") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3118,7 +3146,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cd4b7b530b8f_Butanoga-Rok-Bracko-01.jpg");
+    background-image: url("../../imgAtividades/outro/1-ma.jpg") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3132,7 +3160,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cd4b7b530b8f_Butanoga-Rok-Bracko-01.jpg");
+    background-image: url("../../imgAtividades/outro/1-ma.jpg");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3141,6 +3169,8 @@ strong {
     -ms-transform: scale(1.1);
     transform: scale(1.1)
 }
+
+
 
 .img-18._1st-slide {
     opacity: 1;
@@ -3153,7 +3183,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdbc5d530b3d_DixieSB-Rok-Bracko-01.jpg");
+    background-image: url("../../imgAtividades/outro/db.png") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3174,7 +3204,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cd488b530ba7_Yearbook2014_1920pix.jpg");
+    background-image: url("../../imgAtividades/outro/1-ma.jpg") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3188,7 +3218,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cd488b530ba7_Yearbook2014_1920pix.jpg");
+    background-image: url("../../imgAtividades/outro/1-ma.jpg") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3226,19 +3256,7 @@ strong {
     transform: none
 }
 
-.img-07 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cd5247530b7c_Sajtrga_09_1920px.jpg");
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1)
-}
+
 
 .img-07._1st-slide {
     opacity: 1;
@@ -3272,7 +3290,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdba7e530ba5_NezaZehelj_LOGO-B_1920.png");
+    background-image: url("../../imgAtividades/outro/trump.png") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3286,7 +3304,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdba7e530ba5_NezaZehelj_LOGO-B_1920.png");
+    background-image: url("../../imgAtividades/outro/trump.png") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3311,7 +3329,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdff57530b2f_WebTemplate_Mockup_1920px.jpg");
+    background-image: url("../../imgAtividades/outro/semana22.jpg") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3325,7 +3343,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdff57530b2f_WebTemplate_Mockup_1920px.jpg");
+    background-image: url("../../imgAtividades/outro/semana22.jpg");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3346,7 +3364,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdd7ba530b1a_LOGOS_CB_All.gif");
+    background-image: url("../../imgAtividades/outro/math1.gif") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3360,7 +3378,7 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cdd7ba530b1a_LOGOS_CB_All.gif");
+    background-image: url("../../imgAtividades/outro/math1.gif");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -4876,6 +4894,19 @@ html.w-mod-js [data-ix=load-w-300ms],html.w-mod-js [data-ix=load-w-500ms],html.w
     transform: scale(1.1)
 }
 
+#imagemOb2Ds1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../imgAtividades/outro/billGates.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
 
 
 

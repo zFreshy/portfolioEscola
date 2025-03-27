@@ -7187,6 +7187,152 @@ function carregarWeb1() {
             }]
         }
     }, {
+        "slug": "link-print-img-07",
+        "name": "link_PRINT -IMG 07",
+        "value": {
+            "style": {},
+            "triggers": [{
+                "type": "hover",
+                "selector": ".img-07",
+                "preserve3d": true,
+                "stepsA": [{
+                    "opacity": 1,
+                    "transition": "transform 500ms ease-out-quad 0ms, opacity 500ms ease-out-quad 0ms",
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "scaleZ": 1
+                }],
+                 "stepsB": [{
+                     "opacity": 0,
+                     "transition": "transform 500ms ease-out-quad 0ms, opacity 500ms ease-out-quad 0ms",
+                     "scaleX": 1.1,
+                     "scaleY": 1.1,
+                     "scaleZ": 1
+                 }]
+            }
+            // , {
+            //     "type": "click",
+            //     "selector": ".content",
+            //     "stepsA": [{
+            //         "opacity": 0,
+            //         "transition": "opacity 200ms ease 0"
+            //     }, {
+            //         "display": "none"
+            //     }],
+            //     "stepsB": [{
+            //         "display": "block"
+            //     }, {
+            //         "opacity": 1,
+            //         "transition": "opacity 200ms ease 0"
+            //     }]
+            // }
+            , {
+                "type": "hover",
+                "selector": ".span-out",
+                "stepsA": [{
+                    "opacity": 0,
+                    "transition": "opacity 200ms ease 0"
+                }],
+                "stepsB": [{
+                    "opacity": 1,
+                    "transition": "opacity 200ms ease 0"
+                }]
+            }, {
+                "type": "hover",
+                "selector": ".link",
+                "siblings": true,
+                "stepsA": [{
+                    "opacity": 0,
+                    "transition": "opacity 200ms ease 0"
+                }],
+                "stepsB": [{
+                    "opacity": 1,
+                    "transition": "opacity 200ms ease 0"
+                }]
+            }, {
+                "type": "hover",
+                "selector": ".link--kateg",
+                "descend": true,
+                "stepsA": [{
+                    "opacity": 1,
+                    "height": "auto",
+                    "transition": "height 300ms ease-out-quad 0"
+                }],
+                "stepsB": [{
+                    "opacity": 0,
+                    "height": "0px",
+                    "transition": "height 250ms ease 0"
+                }]
+            }, {
+                "type": "hover",
+                "selector": ".em----dash",
+                "stepsA": [{
+                    "opacity": 0,
+                    "transition": "opacity 200 ease 0"
+                }],
+                "stepsB": [{
+                    "opacity": 1,
+                    "transition": "opacity 200 ease 0"
+                }]
+            }, {
+                "type": "hover",
+                "selector": ".link_pagina",
+                "stepsA": [{
+                    "opacity": 0,
+                    "transition": "opacity 200 ease 0"
+                }],
+                "stepsB": [{
+                    "opacity": 1,
+                    "transition": "opacity 200 ease 0"
+                }]
+            }, {
+                "type": "hover",
+                "selector": ".navigation",
+                "stepsA": [{
+                    "opacity": 0,
+                    "transition": "opacity 200 ease 0"
+                }],
+                "stepsB": [{
+                    "opacity": 1,
+                    "transition": "opacity 200 ease 0"
+                }]
+            }, {
+                "type": "hover",
+                "selector": ".dash-long",
+                "stepsA": [{
+                    "opacity": 0,
+                    "transition": "opacity 200 ease 0"
+                }],
+                "stepsB": [{
+                    "opacity": 1,
+                    "transition": "opacity 200 ease 0"
+                }]
+            }, {
+                "type": "hover",
+                "selector": ".copyrights",
+                "stepsA": [{
+                    "opacity": 0,
+                    "transition": "opacity 200 ease 0"
+                }],
+                "stepsB": [{
+                    "opacity": 1,
+                    "transition": "opacity 200 ease 0"
+                }]
+            }, {
+                "type": "hover",
+                "selector": ".nav-senca",
+                "stepsA": [{
+                    "opacity": 0
+                }],
+                "stepsB": [{
+                    "wait": "400ms"
+                }, {
+                    "opacity": 1,
+                    "transition": "opacity 400ms ease 0"
+                }]
+            }]
+        }
+    }, {
         "slug": "link-print-img-27",
         "name": "link_PRINT -IMG 27",
         "value": {

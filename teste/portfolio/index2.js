@@ -525,6 +525,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
               
               let obDs1Btn = document.getElementById("obDs1Btn")
               const obDs1 = document.getElementById("obDs1");
+              let ob2Ds1Btn = document.getElementById("ob2Ds1Btn")
+              const ob2Ds1 = document.getElementById("ob2Ds1");
 
               let opDs1Btn = document.getElementById("opDs1Btn")
               const opDs1 = document.getElementById("opDs1");
@@ -556,6 +558,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
               let opCN1Btn = document.getElementById("opCN1Btn")
               const opCN1 = document.getElementById("opCN1");
+
+              abrirAtividade(ob2Ds1, ob2Ds1Btn)
+              fecharAtividade(ob2Ds1)
 
               abrirAtividade(obDs1, obDs1Btn)
               fecharAtividade(obDs1)

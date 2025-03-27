@@ -5427,7 +5427,7 @@ OUTRO CSS -------------------------------------------------------- */
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://assets.website-files.com/6151d63e6bb0cdd6c0530ad5/6151d63e6bb0cd5247530b7c_Sajtrga_09_1920px.jpg");
+    background-image: url("imgAtividades/outro/billGates.jpg") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -6449,4 +6449,165 @@ OUTRO CSS -------------------------------------------------------- */
 
   #canvas {
     max-height: 100vh !important;
+  }
+
+  .contact {
+    margin-top: 0;
+  }
+
+
+  
+#video-wrapper {
+    position: relative;
+    max-width: 40vw;
+    width: 100%;
+    height: auto;
+    line-height: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid rgb(57,57,57);
+  }
+  
+  video {
+    width: 100%;
+  }
+  
+  .control-wrapper {
+    width: calc(100% - 12px);
+    margin: 6px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #controls {
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  .hide-controls {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  
+  .controls {
+    background: rgba(105,105,105,0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px 20px;
+  }
+  
+  .controls img {
+    height: 20px;
+    filter: invert(1);
+  }
+  
+  .controls button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  #play-pause.isPlaying .pauseIcon, 
+  #mute.isMute .muteIcon,
+  #full-screen.isFullscreen .minimiseIcon {
+    display: block;
+  }
+  #play-pause.isPlaying .playIcon, 
+  #mute.isMute .volumeIcon,
+  #full-screen.isFullscreen .fullscreenIcon {
+    display: none;
+  }
+  #play-pause:not(.isPlaying) .playIcon, 
+  #mute:not(.isMute) .volumeIcon,
+  #full-screen:not(.isFullscreen) .fullscreenIcon{
+    display: block;
+  }
+  #play-pause:not(.isPlaying) .pauseIcon, 
+  #mute:not(.isMute) .muteIcon,
+  #full-screen:not(.isFullscreen) .minimiseIcon {
+    display: none;
+  }
+  
+  .timeline-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .timeline-spacer {
+    width: 100%;
+    padding: 6px 0;
+    cursor: pointer;
+  }
+  
+  .full-timeline {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+  }
+  
+  #progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: white;
+    width: 0%;
+  }
+  
+  #current-time {
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+  
+  #duration {
+    margin-left: 5px;
+  }
+  
+  @media (max-width: 576px) {
+    .controls {
+      gap: 10px;
+      padding: 10px 10px;
+    }
+    
+    .controls img {
+      height: 16px;
+    }
+    
+    #current-time {
+      margin-left: 10px;
+    }
+  
+  }
+  
+  #listaFeatures li {
+      position: relative
+  }
+  
+  #listaFeatures .star {
+      position: absolute;
+      top: 60%;
+      right: 100%;
+  }
+
+  .project-wrap2 {
+    height: 50%;
+  }
+
+  .section2222 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
